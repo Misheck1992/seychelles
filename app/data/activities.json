@@ -1,0 +1,442 @@
+{
+  "coastal-defense-2024": {
+    "id": "coastal-defense-2024",
+    "title": "Coastal Defense Infrastructure Program",
+    "description": "Construction of sea walls, breakwaters, and coastal protection infrastructure to defend against storm surge and sea level rise.",
+    "category": "resilience",
+    "status": "Ongoing",
+    "startDate": "January 2024",
+    "endDate": "December 2026",
+    "budget": "₨ 150 Million",
+    "lead": "Coastal Engineering Division",
+    "year": "2024",
+    "councils": [
+      {
+        "id": "public-infrastructure",
+        "name": "Public Infrastructure",
+        "role": "Lead"
+      },
+      {
+        "id": "disaster-management",
+        "name": "Disaster Management", 
+        "role": "Supporting"
+      },
+      {
+        "id": "finance",
+        "name": "Finance",
+        "role": "Supporting"
+      }
+    ],
+    "districts": [
+      "Victoria",
+      "Beau Vallon",
+      "Anse Royale",
+      "Praslin"
+    ],
+    "partners": [
+      {
+        "id": "world-bank",
+        "name": "World Bank",
+        "type": "international"
+      },
+      {
+        "id": "coastal-engineering-ltd",
+        "name": "Coastal Engineering Ltd",
+        "type": "private"
+      }
+    ],
+    "disasterTypes": ["cyclone", "tsunami", "flood"],
+    "affectedPopulations": ["elderly", "children", "disabilities"],
+    "coverage": "Coastal areas",
+    "beneficiaries": "50,000+ coastal residents"
+  },
+  
+  "cyclone-response-protocol": {
+    "id": "cyclone-response-protocol",
+    "title": "National Cyclone Emergency Response",
+    "description": "Coordinated emergency response plan for Category 3+ cyclones including evacuation, shelter management, and immediate relief distribution.",
+    "category": "response",
+    "status": "Active",
+    "lastUpdated": "November 2024",
+    "budget": "₨ 75 Million",
+    "lead": "National Emergency Operations Center",
+    "year": "2024",
+    "councils": [
+      {
+        "id": "disaster-management",
+        "name": "Disaster Management",
+        "role": "Lead"
+      },
+      {
+        "id": "health",
+        "name": "Health",
+        "role": "Supporting"
+      },
+      {
+        "id": "local-government",
+        "name": "Local Government",
+        "role": "Supporting"
+      },
+      {
+        "id": "external-communications",
+        "name": "External Communications",
+        "role": "Supporting"
+      }
+    ],
+    "districts": [
+      "Victoria",
+      "Cascade",
+      "Rivière du Rempart",
+      "Praslin",
+      "Anse Royale",
+      "Takamaka",
+      "Mont Fleuri",
+      "Glacis",
+      "Beau Vallon"
+    ],
+    "partners": [
+      {
+        "id": "red-cross",
+        "name": "Seychelles Red Cross Society",
+        "type": "national"
+      },
+      {
+        "id": "undp",
+        "name": "UNDP",
+        "type": "international"
+      }
+    ],
+    "disasterTypes": ["cyclone"],
+    "affectedPopulations": ["elderly", "children", "disabilities", "pregnant"],
+    "coverage": "Nationwide",
+    "beneficiaries": "1.3 million residents"
+  },
+
+  "agricultural-recovery-support": {
+    "id": "agricultural-recovery-support",
+    "title": "Post-Disaster Agricultural Recovery Program",
+    "description": "Comprehensive support for farmers affected by natural disasters including crop replacement, livestock replacement, and equipment subsidies.",
+    "category": "recovery",
+    "status": "Ongoing", 
+    "startDate": "March 2024",
+    "endDate": "February 2027",
+    "budget": "₨ 95 Million",
+    "lead": "Agricultural Recovery Unit",
+    "year": "2024",
+    "councils": [
+      {
+        "id": "agriculture",
+        "name": "Agriculture",
+        "role": "Lead"
+      },
+      {
+        "id": "finance",
+        "name": "Finance",
+        "role": "Supporting"
+      },
+      {
+        "id": "social-security",
+        "name": "Social Security",
+        "role": "Supporting"
+      }
+    ],
+    "districts": [
+      "Cascade",
+      "Rivière du Rempart",
+      "Praslin",
+      "Anse Royale",
+      "Takamaka",
+      "Glacis"
+    ],
+    "partners": [
+      {
+        "id": "farmers-association",
+        "name": "Seychelles Farmers Association",
+        "type": "national"
+      },
+      {
+        "id": "agricultural-bank",
+        "name": "Seychelles Commercial Bank Agricultural Division",
+        "type": "private"
+      },
+      {
+        "id": "fao",
+        "name": "Food and Agriculture Organization",
+        "type": "international"
+      }
+    ],
+    "disasterTypes": ["cyclone", "drought", "flood"],
+    "affectedPopulations": ["elderly"],
+    "coverage": "Agricultural districts",
+    "beneficiaries": "3,500+ farmers"
+  },
+
+  "community-preparedness-training": {
+    "id": "community-preparedness-training",
+    "title": "Community Disaster Preparedness Training Program",
+    "description": "Comprehensive training program for communities on disaster preparedness, first aid, evacuation procedures, and emergency communication.",
+    "category": "preparedness",
+    "status": "Recurring",
+    "frequency": "Quarterly",
+    "budget": "₨ 25 Million annually",
+    "lead": "Community Preparedness Division",
+    "year": "2024",
+    "councils": [
+      {
+        "id": "local-government",
+        "name": "Local Government",
+        "role": "Lead"
+      },
+      {
+        "id": "health",
+        "name": "Health",
+        "role": "Supporting"
+      },
+      {
+        "id": "education",
+        "name": "Education",
+        "role": "Supporting"
+      }
+    ],
+    "districts": [
+      "Victoria",
+      "Cascade",
+      "Mont Fleuri",
+      "Glacis"
+    ],
+    "partners": [
+      {
+        "id": "community-centers",
+        "name": "Community Centers Network",
+        "type": "national"
+      },
+      {
+        "id": "red-cross-training",
+        "name": "Red Cross Training Institute",
+        "type": "national"
+      }
+    ],
+    "disasterTypes": ["cyclone", "flood", "earthquake"],
+    "affectedPopulations": ["elderly", "children", "disabilities"],
+    "coverage": "Urban and suburban communities",
+    "beneficiaries": "2,000+ community members per quarter"
+  },
+
+  "hospital-emergency-preparedness": {
+    "id": "hospital-emergency-preparedness",
+    "title": "Healthcare Facility Emergency Preparedness Enhancement",
+    "description": "Upgrading hospital emergency preparedness including backup power systems, medical supply stockpiling, and staff training for mass casualty events.",
+    "category": "preparedness", 
+    "status": "Active",
+    "startDate": "June 2024",
+    "endDate": "May 2026",
+    "budget": "₨ 80 Million",
+    "lead": "Hospital Emergency Planning Unit",
+    "year": "2024",
+    "councils": [
+      {
+        "id": "health",
+        "name": "Health",
+        "role": "Lead"
+      },
+      {
+        "id": "public-utilities",
+        "name": "Public Utilities",
+        "role": "Supporting"
+      }
+    ],
+    "districts": [
+      "Victoria",
+      "Mont Fleuri",
+      "Praslin",
+      "Anse Royale"
+    ],
+    "partners": [
+      {
+        "id": "ministry-health",
+        "name": "Ministry of Health and Wellness",
+        "type": "national"
+      },
+      {
+        "id": "private-hospitals",
+        "name": "Private Hospitals Association",
+        "type": "private"
+      }
+    ],
+    "disasterTypes": ["cyclone", "earthquake", "flood"],
+    "affectedPopulations": ["elderly", "children", "disabilities", "pregnant"],
+    "coverage": "All major healthcare facilities",
+    "beneficiaries": "Healthcare system serving 1.3M population"
+  },
+
+  "tourism-evacuation-response": {
+    "id": "tourism-evacuation-response", 
+    "title": "Tourist Evacuation and Safety Response Plan",
+    "description": "Emergency response plan for evacuating and ensuring safety of tourists during disasters, including coordination with hotels, resorts, and tour operators.",
+    "category": "response",
+    "status": "Active",
+    "lastUpdated": "September 2024",
+    "budget": "₨ 35 Million",
+    "lead": "Tourism Emergency Response Unit",
+    "year": "2024",
+    "councils": [
+      {
+        "id": "tourism",
+        "name": "Tourism", 
+        "role": "Lead"
+      },
+      {
+        "id": "external-affairs",
+        "name": "External Affairs",
+        "role": "Supporting"
+      },
+      {
+        "id": "disaster-management",
+        "name": "Disaster Management",
+        "role": "Supporting"
+      }
+    ],
+    "districts": [
+      "Beau Vallon",
+      "Anse Royale", 
+      "Praslin",
+      "Victoria"
+    ],
+    "partners": [
+      {
+        "id": "hotel-association",
+        "name": "Seychelles Association of Hotels and Restaurants",
+        "type": "private"
+      },
+      {
+        "id": "tour-operators",
+        "name": "Association of Tour Operators of Seychelles",
+        "type": "private"
+      },
+      {
+        "id": "tourism-board",
+        "name": "Seychelles Tourism Promotion Authority",
+        "type": "national"
+      }
+    ],
+    "disasterTypes": ["cyclone", "tsunami"],
+    "affectedPopulations": ["elderly", "children", "disabilities"],
+    "coverage": "Tourist areas and accommodations",
+    "beneficiaries": "150,000+ annual tourists"
+  },
+
+  "school-infrastructure-resilience": {
+    "id": "school-infrastructure-resilience",
+    "title": "School Infrastructure Resilience and Safety Program", 
+    "description": "Comprehensive program to retrofit schools for disaster resilience, install early warning systems, and establish school-based emergency response teams.",
+    "category": "resilience",
+    "status": "Ongoing",
+    "startDate": "August 2024",
+    "endDate": "July 2027",
+    "budget": "₨ 120 Million",
+    "lead": "School Infrastructure Safety Division",
+    "year": "2024",
+    "councils": [
+      {
+        "id": "education",
+        "name": "Education",
+        "role": "Lead"
+      },
+      {
+        "id": "public-infrastructure", 
+        "name": "Public Infrastructure",
+        "role": "Supporting"
+      },
+      {
+        "id": "local-government",
+        "name": "Local Government",
+        "role": "Supporting"
+      }
+    ],
+    "districts": [
+      "Victoria",
+      "Cascade",
+      "Mont Fleuri",
+      "Glacis",
+      "Praslin"
+    ],
+    "partners": [
+      {
+        "id": "school-construction-board",
+        "name": "School Construction Board",
+        "type": "national"
+      },
+      {
+        "id": "unicef",
+        "name": "UNICEF",
+        "type": "international"  
+      },
+      {
+        "id": "construction-companies",
+        "name": "Local Construction Companies Consortium",
+        "type": "private"
+      }
+    ],
+    "disasterTypes": ["cyclone", "earthquake", "flood"],
+    "affectedPopulations": ["children"],
+    "coverage": "150+ schools nationwide",
+    "beneficiaries": "75,000+ students and staff"
+  },
+
+  "fisheries-community-recovery": {
+    "id": "fisheries-community-recovery",
+    "title": "Coastal Fishing Communities Recovery Initiative",
+    "description": "Post-disaster recovery program for fishing communities including boat repair/replacement, fishing equipment subsidies, and alternative livelihood training.",
+    "category": "recovery",
+    "status": "Active",
+    "startDate": "April 2024", 
+    "endDate": "March 2026",
+    "budget": "₨ 45 Million",
+    "lead": "Fisheries Recovery Division",
+    "year": "2024",
+    "councils": [
+      {
+        "id": "fisheries",
+        "name": "Fisheries",
+        "role": "Lead"
+      },
+      {
+        "id": "social-security",
+        "name": "Social Security", 
+        "role": "Supporting"
+      },
+      {
+        "id": "finance",
+        "name": "Finance",
+        "role": "Supporting"
+      }
+    ],
+    "districts": [
+      "Beau Vallon",
+      "Anse Royale",
+      "Praslin",
+      "Rivière du Rempart"
+    ],
+    "partners": [
+      {
+        "id": "fishermen-association",
+        "name": "Seychelles Fishermen Association",
+        "type": "national"
+      },
+      {
+        "id": "cooperative-societies",
+        "name": "Fishermen Cooperative Societies",
+        "type": "national"
+      },
+      {
+        "id": "development-bank",
+        "name": "Development Bank of Seychelles",
+        "type": "national"
+      }
+    ],
+    "disasterTypes": ["cyclone", "tsunami"],
+    "affectedPopulations": ["elderly"],
+    "coverage": "Coastal fishing communities",
+    "beneficiaries": "1,200+ fishing families"
+  }
+}
