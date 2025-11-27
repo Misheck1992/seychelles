@@ -1,0 +1,723 @@
+@import url("https://fonts.googleapis.com/css2?family=Readex+Pro:wght@200;300;500;600;700&family=Spline+Sans:wght@300;400;500;600;700&display=swap");
+
+/* Import CSS files from css folder */
+@import '/css/bootstrap.min.css';
+@import '/css/flaticon.css';
+@import '/css/remixicon.css';
+@import '/css/owl.carousel.min.css';
+@import '/css/owl-theme-default-min.css';
+@import '/css/odometer.min.css';
+@import '/css/fancybox.min.css';
+@import '/css/aos.css';
+@import '/css/responsive.css';
+@import '/css/dark-theme.css';
+@import '/css/custom-flaticon.css';
+@import '/css/style.css';
+@import '/css/tabs.css';
+
+/* Import Leaflet CSS */
+@import '../styles/leaflet.css';
+@import '../styles/map.css';
+
+/* Global styles */
+
+:root {
+  --primary: #338F7A;
+  --secondary: #338F7A;
+  --accent: #F59946;
+  --dark: #222222;
+  --light: #f8f9fa;
+  --border-color: #dee2e6;
+}
+
+/* Remove underlines from all anchor tags */
+a,
+a:hover,
+a:focus,
+a:active,
+a:visited {
+  text-decoration: none !important;
+}
+/* SVG Chart Styles */
+.chart-container svg {
+  overflow: visible;
+}
+
+.radarArea {
+  pointer-events: all;
+}
+
+.radarArea:hover {
+  fill-opacity: 0.7;
+}
+
+.radarCircle:hover {
+  fill-opacity: 0.7;
+}
+
+/* Pulsating effect for active alerts */
+@keyframes pulse {
+  0% {
+      r: 10;
+      opacity: 0.8;
+  }
+  100% {
+      r: 20;
+      opacity: 0;
+  }
+}
+
+.pulse-circle {
+  animation: pulse 1.5s infinite;
+}
+
+/* Map styles */
+.district:hover {
+  fill-opacity: 0.8;
+  cursor: pointer;
+}
+
+.city:hover, .evacuation:hover {
+  r: 8;
+  cursor: pointer;
+}
+
+.city-label {
+  pointer-events: none;
+}
+
+/* Bar chart styles */
+.bar:hover {
+  fill-opacity: 0.8;
+  cursor: pointer;
+}
+
+/* Tooltip styles */
+div.tooltip {
+  position: absolute;
+  text-align: center;
+  padding: 8px;
+  font: 12px sans-serif;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  pointer-events: none;
+  z-index: 100;
+}
+
+/* Document Cards */
+.document-card {
+  transition: all 0.3s ease;
+  border: 1px solid rgba(0,0,0,0.05);
+}
+
+.document-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+}
+
+.document-preview {
+  min-height: 220px;
+}
+
+.document-icon {
+  transition: all 0.3s ease;
+}
+
+.document-card:hover .document-icon {
+  transform: scale(1.1);
+}
+
+.btn-like {
+  transition: all 0.3s ease;
+}
+
+.btn-like:hover {
+  transform: scale(1.2);
+}
+
+.document-badge {
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.table td, .table th {
+  padding: 12px 15px;
+  vertical-align: middle;
+}
+
+/* Extended Dropdown Menu for Districts */
+.district-dropdown {
+  min-width: 500px !important;
+  width: auto !important;
+  padding: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  border: none;
+}
+
+.district-dropdown .nav-item {
+  list-style: none;
+}
+
+.district-dropdown .nav-link {
+  padding: 8px 15px;
+  transition: all 0.3s ease;
+  color: #666;
+  border-radius: 5px;
+  margin: 2px 0;
+}
+
+.district-dropdown .nav-link:hover {
+  background-color: rgba(51, 143, 122, 0.1);
+  color: #338F7A;
+  transform: translateX(3px);
+}
+
+.district-dropdown .dropdown-divider {
+  margin: 10px 0;
+  border-top: 1px solid rgba(51, 143, 122, 0.2);
+}
+
+.district-dropdown .view-all {
+  color: #338F7A;
+  font-weight: 600;
+}
+
+.district-dropdown .view-all:hover {
+  background-color: #338F7A;
+  color: white;
+}
+
+/* Extended Dropdown Menu for Ministries */
+.ministry-dropdown {
+  min-width: 800px !important;
+  width: auto !important;
+  padding: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  border: none;
+}
+
+.ministry-dropdown .nav-item {
+  list-style: none;
+}
+
+.ministry-dropdown .nav-link {
+  padding: 8px 10px;
+  transition: all 0.3s ease;
+  color: #666;
+  border-radius: 5px;
+  margin: 3px 0;
+  white-space: normal;
+  font-size: 14px;
+}
+
+.ministry-dropdown .nav-link:hover {
+  background-color: rgba(51, 143, 122, 0.1);
+  color: #338F7A;
+  transform: translateX(3px);
+}
+
+.ministry-dropdown .dropdown-divider {
+  margin: 10px 0;
+  border-top: 1px solid rgba(51, 143, 122, 0.2);
+}
+
+.ministry-dropdown .view-all {
+  color: #338F7A;
+  font-weight: 600;
+}
+
+.ministry-dropdown .view-all:hover {
+  background-color: #338F7A;
+  color: white;
+}
+
+/* Header Overrides */
+@media (min-width: 1400px) {
+  .header-bottom .container {
+      max-width: 100%;
+      padding-left: 10px;
+      padding-right: 10px;
+  }
+}
+
+/* Force navbar display fix */
+@media (min-width: 992px) {
+ .navbar-expand-md .navbar-collapse {
+    display: flex !important;
+    flex-basis: auto;
+ }
+ 
+ .navbar-expand-md .navbar-nav {
+    flex-direction: row;
+    margin-right: auto;
+ }
+ 
+ .collapse:not(.show) {
+    display: flex;
+ }
+ 
+ .navbar-nav {
+    display: flex !important;
+ }
+}
+
+/* Emergency button visibility fix */
+.nav-item.d-lg-none {
+ display: none !important;
+}
+
+@media (max-width: 991px) {
+ .nav-item.d-lg-none {
+    display: block !important;
+ }
+}
+
+/* Fix logo and searchbox positioning */
+.header-bottom .container {
+ position: relative;
+}
+
+.navbar-brand {
+ margin-right: 2rem;
+}
+
+.other-options.md-none {
+ display: flex !important;
+ align-items: center;
+}
+
+@media (max-width: 991px) {
+ .other-options.md-none {
+    display: none !important;
+ }
+}
+
+/* District View Styles */
+
+/* Timeline Styles */
+.timeline-container {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 30px;
+}
+
+.timeline-line {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 15px;
+  width: 2px;
+  background-color: rgba(51, 143, 122, 0.3);
+}
+
+.timeline-item {
+  position: relative;
+  padding-bottom: 30px;
+}
+
+.timeline-item:last-child {
+  padding-bottom: 0;
+}
+
+.timeline-item:before {
+  content: "";
+  position: absolute;
+  left: -30px;
+  top: 4px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #338F7A;
+  border: 3px solid #fff;
+  box-shadow: 0 0 0 1px rgba(51, 143, 122, 0.3);
+  z-index: 1;
+}
+
+.timeline-date {
+  font-weight: 600;
+  color: #338F7A;
+  margin-bottom: 5px;
+}
+
+.timeline-content {
+  background-color: rgba(51, 143, 122, 0.05);
+  padding: 15px;
+  border-radius: 5px;
+  border-left: 3px solid #338F7A;
+}
+
+.timeline-meta {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+
+/* District Activity Tabs */
+.district-activity-tabs .nav-tabs {
+  border-bottom: none;
+  background-color: #f5f5f5;
+  border-radius: 5px 5px 0 0;
+  padding: 10px 10px 0;
+}
+
+.district-activity-tabs .nav-link {
+  color: #666;
+  border: 1px solid transparent;
+  border-radius: 5px 5px 0 0;
+  padding: 12px 15px;
+  transition: all 0.3s ease;
+  margin-right: 5px;
+  font-weight: 500;
+}
+
+.district-activity-tabs .nav-link:hover {
+  background-color: rgba(51, 143, 122, 0.05);
+  border-color: transparent;
+}
+
+.district-activity-tabs .nav-link.active {
+  background-color: #fff;
+  border-color: #dee2e6 #dee2e6 #fff;
+  color: #338F7A;
+}
+
+/* Dashboard Cards */
+.readiness-indicator {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+}
+
+.readiness-indicator svg {
+  transform: rotate(-90deg);
+}
+
+.readiness-indicator text {
+  transform: rotate(90deg);
+  dominant-baseline: middle;
+  fill: #333;
+}
+
+/* Document Tab Styles */
+.document-tabs .nav-pills {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.document-tabs .nav-link {
+  color: #666;
+  background-color: #f5f5f5;
+  border-radius: 20px;
+  padding: 8px 20px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  margin-bottom: 10px;
+  margin-right: 5px;
+}
+
+.document-tabs .nav-link.active {
+  background-color: #338F7A;
+  color: white;
+}
+
+.document-tabs .nav-link:hover:not(.active) {
+  background-color: #e0e0e0;
+  transform: translateY(-2px);
+}
+
+/* Emergency Contact Cards */
+.emergency-contact-card {
+  transition: all 0.3s ease;
+}
+
+.emergency-contact-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* District Data Controls */
+.district-data-controls {
+  transition: all 0.3s ease;
+}
+
+.district-data-controls:hover {
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* Risk Gauge Chart Placeholder */
+#risk-gauge {
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+#risk-gauge:after {
+  content: "";
+  position: absolute;
+  width: 150px;
+  height: 75px;
+  border-radius: 150px 150px 0 0;
+  background: linear-gradient(to right, #a8e6cf 0%, #ffcaa3 50%, #ff9a76 100%);
+  top: 50px;
+}
+
+#risk-gauge:before {
+  content: "65%";
+  position: absolute;
+  z-index: 1;
+  font-size: 24px;
+  font-weight: bold;
+  top: 90px;
+}
+
+/* Left Sidebar Filter Styles */
+.district-filter-sidebar {
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.district-filter-sidebar:hover {
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.filter-section {
+  border-bottom: 1px solid rgba(51, 143, 122, 0.1);
+  padding-bottom: 15px;
+}
+
+.filter-section:last-child {
+  border-bottom: none;
+}
+
+.filter-header {
+  padding: 10px 0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.filter-header:hover {
+  color: #338F7A;
+}
+
+.filter-header i {
+  transition: transform 0.3s ease;
+}
+
+.filter-header i.rotate-180 {
+  transform: rotate(180deg);
+}
+
+.filter-body {
+  padding-left: 10px;
+}
+
+.form-check-input:checked {
+  background-color: #338F7A;
+  border-color: #338F7A;
+}
+
+.form-check-input:disabled {
+  opacity: 0.5;
+}
+
+.form-check-input:focus {
+  box-shadow: 0 0 0 0.25rem rgba(51, 143, 122, 0.25);
+  border-color: #338F7A;
+}
+
+.btn-link {
+  color: #338F7A;
+  padding: 0;
+  font-size: 14px;
+}
+
+.btn-link:hover {
+  color: #F59946;
+  text-decoration: none;
+}
+
+/* Infographics & Maps Styles */
+.infographic-card,
+.map-card {
+  transition: all 0.3s ease;
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.infographic-card:hover,
+.map-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.infographic-card .card-img-top,
+.map-card .card-img-top {
+  transition: all 0.5s ease;
+}
+
+.infographic-card:hover .card-img-top,
+.map-card:hover .card-img-top {
+  transform: scale(1.03);
+}
+
+.infographic-card .badge,
+.map-card .badge {
+  font-weight: 500;
+  padding: 5px 10px;
+}
+
+/* Map Specific Styles */
+#map {
+  width: 100%;
+  height: 300px;
+  z-index: 1;
+  position: relative;
+}
+
+.info {
+  padding: 6px 8px;
+  font: 14px/16px Arial, Helvetica, sans-serif;
+  background: white;
+  background: rgba(255,255,255,0.8);
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  border-radius: 5px;
+}
+
+.info h4 {
+  margin: 0 0 5px;
+  color: #777;
+}
+
+.legend {
+  line-height: 18px;
+  color: #555;
+}
+
+.legend i {
+  width: 18px;
+  height: 18px;
+  float: left;
+  margin-right: 8px;
+  opacity: 0.7;
+}
+
+.district-label {
+  background: rgba(255, 255, 255, 0.7);
+  border: none;
+  border-radius: 3px;
+  box-shadow: 0 0 3px rgba(0,0,0,0.3);
+  font-weight: bold;
+  padding: 2px 5px;
+  font-size: 10px;
+  pointer-events: none;
+}
+
+#error-message {
+  color: red;
+  background: #ffeeee;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 10px;
+  display: none;
+  font-size: 0.8rem;
+}
+
+/* Responsive styles */
+@media (max-width: 991px) {
+  .ministry-dropdown {
+      min-width: 600px !important;
+  }
+  
+  .district-filter-sidebar {
+      position: relative !important;
+      top: 0 !important;
+      margin-bottom: 20px;
+  }
+  
+  .timeline-container {
+      padding-left: 25px;
+  }
+  
+  .timeline-item:before {
+      left: -25px;
+  }
+}
+
+@media (max-width: 767px) {
+  .document-preview {
+      min-height: 150px;
+  }
+  
+  .document-info {
+      padding: 15px !important;
+  }
+  
+  .document-actions {
+      flex-direction: column;
+      align-items: flex-start !important;
+  }
+  
+  .document-actions a {
+      margin-bottom: 10px;
+      width: 100%;
+  }
+  
+  .btn-like {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+  }
+  
+  .district-dropdown,
+  .ministry-dropdown {
+      min-width: 300px !important;
+      width: 95% !important;
+      margin: 0 auto;
+      left: 0;
+      transform: none;
+  }
+  
+  .district-dropdown .row > div,
+  .ministry-dropdown .row > div {
+      margin-bottom: 10px;
+  }
+  
+  .ministry-dropdown .nav-link {
+      font-size: 15px;
+  }
+  
+  .timeline-container {
+      padding-left: 20px;
+  }
+  
+  .timeline-item:before {
+      left: -20px;
+      width: 12px;
+      height: 12px;
+  }
+  
+  .district-activity-tabs .nav-link {
+      padding: 8px 10px;
+      font-size: 14px;
+  }
+  
+  .readiness-indicator {
+      width: 80px;
+      height: 80px;
+  }
+  
+  .readiness-indicator svg text {
+      font-size: 18px;
+  }
+}
