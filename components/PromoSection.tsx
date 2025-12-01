@@ -24,21 +24,8 @@ const PromoSection: React.FC = () => {
     <section className="promo-section">
       <div className="container">
         <div className="promo-wrap style2" style={{ position: 'relative', zIndex: 5, marginTop: '-150px' }}>
-          <Image
-            src="/img/shape-8.png"
-            alt="Shape"
-            className="promo-shape-one"
-            width={100}
-            height={100}
-          />
-          {/* Using the same shape image for both since shape-9.png doesn't exist */}
-          <Image
-            src="/img/shape-8.png"
-            alt="Shape"
-            className="promo-shape-two"
-            width={100}
-            height={100}
-          />
+        
+         
 
           <div className="promo-card">
             <span className="promo-icon">

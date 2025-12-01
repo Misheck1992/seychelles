@@ -6,7 +6,7 @@ export function HeroSection() {
   return (
     <section className="hero-wrap style2 hero-wrap-style">
     <video loop muted autoPlay poster="#" className="background-video">
-      <source src="/img/flood.mp4" type="video/mp4" />
+      <source src="/home.mp4" type="video/mp4" />
     </video>
     <div className="hero-slide-item">
       <div className="container">

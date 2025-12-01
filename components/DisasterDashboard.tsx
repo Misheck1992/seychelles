@@ -40,20 +40,20 @@ const DisasterDashboard: React.FC<DisasterDashboardProps> = () => {
       if (ref.current) ref.current.innerHTML = '';
     });
 
-    // Sample data
+    // Sample data with Seychelles districts
     const disasterData: DisasterData[] = [
-      { date: '2023-01-15', type: 'Cyclone', severity: 'High', affected: 1200, district: 'Port Louis' },
-      { date: '2023-02-20', type: 'Flood', severity: 'Medium', affected: 800, district: 'Black River' },
-      { date: '2023-03-10', type: 'Landslide', severity: 'Low', affected: 150, district: 'Moka' },
-      { date: '2023-04-05', type: 'Flood', severity: 'High', affected: 1500, district: 'Flacq' },
-      { date: '2023-05-12', type: 'Cyclone', severity: 'Medium', affected: 950, district: 'Grand Port' },
-      { date: '2023-06-18', type: 'Drought', severity: 'Medium', affected: 2000, district: 'Savanne' },
-      { date: '2023-07-22', type: 'Flood', severity: 'Low', affected: 300, district: 'Pamplemousses' },
-      { date: '2023-08-30', type: 'Cyclone', severity: 'High', affected: 1800, district: 'Riviere du Rempart' },
-      { date: '2023-09-14', type: 'Landslide', severity: 'Medium', affected: 450, district: 'Plaines Wilhems' },
-      { date: '2023-10-25', type: 'Flood', severity: 'High', affected: 1100, district: 'Port Louis' },
-      { date: '2023-11-08', type: 'Drought', severity: 'Low', affected: 600, district: 'Moka' },
-      { date: '2023-12-12', type: 'Cyclone', severity: 'High', affected: 2200, district: 'Black River' }
+      { date: '2023-01-15', type: 'Cyclone', severity: 'High', affected: 1200, district: 'Anse Boileau' },
+      { date: '2023-02-20', type: 'Flood', severity: 'Medium', affected: 800, district: 'Baie Lazare' },
+      { date: '2023-03-10', type: 'Landslide', severity: 'Low', affected: 150, district: 'Beau Vallon' },
+      { date: '2023-04-05', type: 'Flood', severity: 'High', affected: 1500, district: 'Glacis' },
+      { date: '2023-05-12', type: 'Cyclone', severity: 'Medium', affected: 950, district: 'Grand Anse Mahé' },
+      { date: '2023-06-18', type: 'Drought', severity: 'Medium', affected: 2000, district: 'La Digue' },
+      { date: '2023-07-22', type: 'Flood', severity: 'Low', affected: 300, district: 'Mont Buxton' },
+      { date: '2023-08-30', type: 'Cyclone', severity: 'High', affected: 1800, district: 'Plaisance' },
+      { date: '2023-09-14', type: 'Landslide', severity: 'Medium', affected: 450, district: 'Pointe Larue' },
+      { date: '2023-10-25', type: 'Flood', severity: 'High', affected: 1100, district: 'Port Glaud' },
+      { date: '2023-11-08', type: 'Drought', severity: 'Low', affected: 600, district: 'Takamaka' },
+      { date: '2023-12-12', type: 'Cyclone', severity: 'High', affected: 2200, district: 'Victoria' }
     ];
 
     // Parse dates
