@@ -13,7 +13,7 @@ const EmergencyContactsSection: React.FC = () => {
         </div>
 
         <div className="row justify-content-center">
-          <div className="col-xl-4 col-lg-6 col-md-6" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="100">
+          <div className="col-xl-4 col-lg-6 col-md-6">
             <div className="contact-card d-flex align-items-center p-4 mb-4 rounded shadow-sm border-start border-5 border-danger">
               <div className="contact-icon me-4">
                 <i className="flaticon-telephone text-danger" style={{ fontSize: '36px' }}></i>
@@ -26,20 +26,21 @@ const EmergencyContactsSection: React.FC = () => {
             </div>
           </div>
 
-          <div className="col-xl-4 col-lg-6 col-md-6" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200">
+          {/* Source: https://www.drmd.sc/ */}
+          <div className="col-xl-4 col-lg-6 col-md-6">
             <div className="contact-card d-flex align-items-center p-4 mb-4 rounded shadow-sm border-start border-5 border-primary">
               <div className="contact-icon me-4">
                 <i className="flaticon-call text-primary" style={{ fontSize: '36px' }}></i>
               </div>
               <div className="contact-info">
-                <h3 className="h5 mb-1">Disaster Management Center</h3>
-                <p className="mb-0 fw-bold fs-4">405-5555</p>
-                <p className="text-muted small mb-0">24/7 Emergency Hotline</p>
+                <h3 className="h5 mb-1">Disaster Risk Management Division</h3>
+                <p className="mb-0 fw-bold fs-4">+248 4389898</p>
+                <p className="text-muted small mb-0">DRMD Hotline</p>
               </div>
             </div>
           </div>
 
-          <div className="col-xl-4 col-lg-6 col-md-6" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">
+          <div className="col-xl-4 col-lg-6 col-md-6">
             <div className="contact-card d-flex align-items-center p-4 mb-4 rounded shadow-sm border-start border-5 border-success">
               <div className="contact-icon me-4">
                 <i className="flaticon-phone-call-1 text-success" style={{ fontSize: '36px' }}></i>
@@ -54,7 +55,7 @@ const EmergencyContactsSection: React.FC = () => {
         </div>
 
         <div className="row justify-content-center">
-          <div className="col-xl-4 col-lg-6 col-md-6" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="100">
+          <div className="col-xl-4 col-lg-6 col-md-6">
             <div className="contact-card d-flex align-items-center p-4 mb-4 rounded shadow-sm border-start border-5 border-warning">
               <div className="contact-icon me-4">
                 <i className="flaticon-pin-1 text-warning" style={{ fontSize: '36px' }}></i>
@@ -67,7 +68,7 @@ const EmergencyContactsSection: React.FC = () => {
             </div>
           </div>
 
-          <div className="col-xl-4 col-lg-6 col-md-6" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200">
+          <div className="col-xl-4 col-lg-6 col-md-6">
             <div className="contact-card d-flex align-items-center p-4 mb-4 rounded shadow-sm border-start border-5 border-info">
               <div className="contact-icon me-4">
                 <i className="flaticon-email-3 text-info" style={{ fontSize: '36px' }}></i>
@@ -80,7 +81,7 @@ const EmergencyContactsSection: React.FC = () => {
             </div>
           </div>
 
-          <div className="col-xl-4 col-lg-6 col-md-6" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">
+          <div className="col-xl-4 col-lg-6 col-md-6">
             <div className="contact-card d-flex align-items-center p-4 mb-4 rounded shadow-sm border-start border-5 border-secondary">
               <div className="contact-icon me-4">
                 <i className="flaticon-mail text-secondary" style={{ fontSize: '36px' }}></i>

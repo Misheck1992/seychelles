@@ -1,5 +1,6 @@
 import Link from "next/link"
 
+// Source: https://www.drmd.sc/
 export function DisasterManagementSection() {
   return (
     <section className="position-relative mt-n4">
@@ -16,14 +17,14 @@ export function DisasterManagementSection() {
           <div className="position-absolute top-0 start-0 end-0 bottom-0 bg-dark opacity-60"></div>
         </div>
         <div className="container position-relative py-5 py-md-6 text-white" style={{ zIndex: 10 }}>
-          <p className="text-small fw-medium mb-2" style={{ color: "#F59946" }}>Seychelles National Disaster Management Center</p>
+          <p className="text-small fw-medium mb-2" style={{ color: "#F59946" }}>Disaster Risk Management Division</p>
           <h1 className="display-4 fw-bold mb-4 lh-sm" style={{ maxWidth: "36rem" }}>
-            Preparing<br />Communities,<br />Responding to<br />Emergencies
+            Be Aware,<br />Be Prepared!
           </h1>
           <p className="small mb-4" style={{ maxWidth: "36rem" }}>
-            The National Disaster Management Center coordinates disaster prevention, preparedness,
-            mitigation, response, and recovery activities to strengthen national resilience and protect our
-            communities.
+            The Disaster Risk Management Division is established for the effective management of disaster
+            through a comprehensive and integrated all-hazard approach and for matters connected therewith
+            or incidental thereto.
           </p>
           <div className="d-flex flex-wrap gap-3 mt-4">
             <Link

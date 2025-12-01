@@ -39,7 +39,7 @@ const MinistriesSection: React.FC = () => {
         </div>
         <div className="team-slider-two owl-carousel">
           {ministries.map(ministry => (
-            <div className="team-card style2" key={ministry.id} data-aos="fade-right">
+            <div className="team-card style2" key={ministry.id}>
               <img src={ministry.image} alt={ministry.name} />
               <div className="team-info-wrap">
                 <img src="/img/team/team-shape-1.png" alt="Shape" className="team-card-shape" />

@@ -234,7 +234,7 @@ export default function DocumentsPage() {
                         </div>
                       </div>
                     </div>
-                    {/* NDRRM Act 2016 */}
+                    {/* DRM Act 2014 */}
                     <div className="col-lg-6 mb-4">
                       <div className="document-card bg-white rounded shadow-sm overflow-hidden">
                         <div className="row g-0">
@@ -257,19 +257,20 @@ export default function DocumentsPage() {
                                 <span className="document-size me-2 px-2 py-1 rounded" style={{ backgroundColor: '#f5f5f5', fontSize: 12 }}>
                                   2.1 MB
                                 </span>
+                                {/* Source: https://www.drmd.sc/about-us/ */}
                                 <span className="document-date ms-auto" style={{ fontSize: 12, color: '#666' }}>
-                                  <i className="ri-time-line me-1" />Published: Apr 16, 2016
+                                  <i className="ri-time-line me-1" />Published: Aug 2014
                                 </span>
                               </div>
-                              <h3 className="document-title mb-2" style={{ fontSize: 20 }}>Disaster Risk Management Act 2016</h3>
+                              <h3 className="document-title mb-2" style={{ fontSize: 20 }}>Disaster Risk Management Act 2014</h3>
                               <p className="document-description mb-3" style={{ fontSize: 14, color: '#666' }}>
                                 Official legislative document establishing the framework for disaster risk reduction and management in Seychelles, including roles and responsibilities of key institutions.
                               </p>
                               <div className="document-actions d-flex align-items-center">
-                                <a href="docs/ndrrm-act-2016.pdf" className="btn style2 me-2" style={{ fontSize: 14, padding: '8px 15px' }}>
+                                <a href="docs/drm-act-2014.pdf" className="btn style2 me-2" style={{ fontSize: 14, padding: '8px 15px' }}>
                                   <i className="ri-download-line me-1" /> Download
                                 </a>
-                                <a href="docs/ndrrm-act-2016.pdf" className="btn style1" style={{ fontSize: 14, padding: '8px 15px' }}>
+                                <a href="docs/drm-act-2014.pdf" className="btn style1" style={{ fontSize: 14, padding: '8px 15px' }}>
                                   <i className="ri-eye-line me-1" /> View Document
                                 </a>
                                 <button type="button" className="btn-like ms-auto bg-transparent border-0">

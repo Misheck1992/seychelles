@@ -6,13 +6,10 @@ export default function Scripts() {
   useEffect(() => {
     // Load scripts dynamically
     const loadScript = (src: string): Promise<void> => {
-      return new Promise((resolve, reject) => {
-        console.log(`Attempting to load script: ${src}`);
-
+      return new Promise((resolve) => {
         // Check if script already exists
         const existingScript = document.querySelector(`script[src="${src}"]`);
         if (existingScript) {
-          console.log(`Script already loaded: ${src}`);
           resolve();
           return;
         }
@@ -21,61 +18,46 @@ export default function Scripts() {
         script.src = src;
         script.async = true;
 
-        script.onload = () => {
-          console.log(`Successfully loaded script: ${src}`);
-          resolve();
-        };
-
-        script.onerror = (error) => {
-          console.error(`Failed to load script: ${src}`, error);
-          reject(new Error(`Failed to load script: ${src}`));
-        };
+        script.onload = () => resolve();
+        script.onerror = () => resolve(); // Resolve even on error to not block other scripts
 
         document.body.appendChild(script);
       });
     };
 
-    // Load scripts in order
+    // Load scripts with optimized strategy
     const loadScripts = async () => {
       try {
-        console.log('Starting to load scripts...');
+        // jQuery must be loaded first (required by other scripts)
+        await loadScript('/js/jquery.min.js');
 
-        // jQuery must be loaded first
-        try {
-          await loadScript('/js/jquery.min.js');
-          console.log('jQuery loaded successfully');
-        } catch (error) {
-          console.error('Error loading jQuery:', error);
-          // Continue with other scripts even if jQuery fails
-        }
-
-        // Then load other scripts
-        const scripts = [
+        // Load independent scripts in parallel for faster loading
+        const parallelScripts = [
           '/js/bootstrap.bundle.min.js',
-          '/js/form-validator.min.js',
-          '/js/contact-form-script.js',
           '/js/aos.js',
+          '/js/odometer.js',
+          '/js/tweenmax.min.js',
+        ];
+
+        // Load these in parallel
+        await Promise.all(parallelScripts.map(src => loadScript(src)));
+
+        // Load jQuery-dependent scripts in parallel
+        const jqueryDependentScripts = [
           '/js/owl.carousel.min.js',
           '/js/owl-thumb.min.js',
-          '/js/odometer.js',
           '/js/circle-progressbar.min.js',
           '/js/fancybox.min.js',
           '/js/jquery.appear.js',
-          '/js/tweenmax.min.js',
-          '/js/main.js'
+          '/js/form-validator.min.js',
+          '/js/contact-form-script.js',
         ];
 
-        // Load remaining scripts one by one to better track errors
-        for (const src of scripts) {
-          try {
-            await loadScript(src);
-          } catch (error) {
-            console.error(`Error loading ${src}:`, error);
-            // Continue with other scripts
-          }
-        }
+        await Promise.all(jqueryDependentScripts.map(src => loadScript(src)));
 
-        console.log('All scripts loading process completed');
+        // Load main.js last (depends on all other scripts)
+        await loadScript('/js/main.js');
+
       } catch (error) {
         console.error('Error in script loading process:', error);
       }
@@ -83,13 +65,7 @@ export default function Scripts() {
 
     // Execute script loading
     loadScripts();
-
-    // Cleanup function
-    return () => {
-      // This is optional and may not be necessary in most cases
-      console.log('Scripts component unmounted');
-    };
   }, []);
 
-  return null; // This component doesn't render anything
+  return null;
 }

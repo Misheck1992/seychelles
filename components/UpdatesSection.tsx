@@ -40,7 +40,7 @@ const UpdatesSection: React.FC = () => {
         </div>
         <div className="blog-slider-one owl-carousel">
           {updates.map(update => (
-            <div className="blog-card style2" key={update.id} data-aos="fade-up">
+            <div className="blog-card style2" key={update.id}>
               <div className="blog-img">
                 <img src={update.image} alt={update.title} />
               </div>

@@ -116,8 +116,12 @@ export default function RootLayout({
           {`
             document.addEventListener('DOMContentLoaded', function() {
               AOS.init({
-                duration: 1000,
-                once: true
+                duration: 400,
+                once: true,
+                easing: 'ease-out',
+                offset: 50,
+                delay: 0,
+                disable: 'mobile'
               });
             });
           `}

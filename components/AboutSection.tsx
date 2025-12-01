@@ -3,11 +3,11 @@ import React from 'react';
 
 const AboutSection: React.FC = () => {
   return (
-    <section className="about-wrap style2 ptb-100">
+    <section className="about-wrap style2 ptb-100 bg-sand">
       <img src="/img/about/about-shape-1.png" alt="Image" className="about-shape-one moveHorizontal" />
       <div className="container">
         <div className="row align-items-center gx-5">
-          <div className="col-lg-6" data-aos="fade-right" data-aos-duration={1200} data-aos-delay={200}>
+          <div className="col-lg-6">
             <div className="about-img-wrap">
               <div className="about-content">
                 <span style={{ fontSize: '1.5rem', color: '#FFA500', fontWeight: 'bold' }}>Welcome to the</span><div className="content-title style3">
@@ -17,9 +17,10 @@ const AboutSection: React.FC = () => {
               <img src="/img/about.png" alt="Disaster Management Center" className="bounce" />
             </div>
           </div>
-          <div className="col-lg-6" data-aos="fade-left" data-aos-duration={1200} data-aos-delay={200}>
+          <div className="col-lg-6">
             <div className="about-content">
-              <p>Our centre serves as the primary institution for coordinating and monitoring the implementation of disaster risk reduction and management activities across the nation. Established under the National Disaster Risk Reduction and Management Act 2016, we work to build a culture of safety and resilience through:</p>
+              {/* Source: https://www.drmd.sc/about-us/ */}
+              <p>The Disaster Risk Management Division is established for the effective management of disaster through a comprehensive and integrated all-hazard approach. Established under the Disaster Risk Management Act 2014, we work to build a culture of safety and resilience through:</p>
 
               <ul className="content-feature-list list-style">
                 <li><i className="ri-checkbox-circle-line" />Implementing the National Strategic Framework and Plan</li>

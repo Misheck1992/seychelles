@@ -1,442 +1,512 @@
 {
-  "coastal-defense-2024": {
-    "id": "coastal-defense-2024",
-    "title": "Coastal Defense Infrastructure Program",
-    "description": "Construction of sea walls, breakwaters, and coastal protection infrastructure to defend against storm surge and sea level rise.",
+  "iowave-2025": {
+    "id": "iowave-2025",
+    "title": "IOWave2025 Indian Ocean Tsunami Exercise",
+    "description": "The 15th edition of the regional Indian Ocean Wave Exercise (IOWave25) coordinated by the National Emergency Operations Centre (NEOC) with national key stakeholders to test tsunami preparedness and response capabilities.",
+    "category": "preparedness",
+    "status": "Completed",
+    "startDate": "November 2025",
+    "endDate": "November 2025",
+    "budget": "SCR 500,000",
+    "lead": "National Emergency Operations Centre (NEOC)",
+    "year": "2025",
+    "councils": [
+      { "id": "disaster-management", "name": "Disaster Management", "role": "Lead" },
+      { "id": "external-communications", "name": "External Communications", "role": "Supporting" },
+      { "id": "local-government", "name": "Local Government", "role": "Supporting" }
+    ],
+    "districts": ["Victoria", "Beau Vallon", "Anse Royale", "Praslin", "La Digue"],
+    "partners": [
+      { "id": "ioc-unesco", "name": "UNESCO IOC", "type": "international" },
+      { "id": "undp", "name": "UNDP", "type": "international" }
+    ],
+    "disasterTypes": ["tsunami"],
+    "affectedPopulations": ["elderly", "children", "disabilities"],
+    "coverage": "Nationwide - All coastal areas",
+    "beneficiaries": "100,000+ coastal residents"
+  },
+  "pointe-conan-stabilisation": {
+    "id": "pointe-conan-stabilisation",
+    "title": "Pointe Conan Slope Stabilisation Project",
+    "description": "Critical national stabilisation project at Pointe Conan implemented in collaboration with the Ministry of Local Government and Community Affairs (MLGCA) to mitigate landslide risks and protect residential areas.",
     "category": "resilience",
+    "status": "Ongoing",
+    "startDate": "September 2025",
+    "endDate": "December 2026",
+    "budget": "SCR 15 Million",
+    "lead": "Operations Section - DRMD",
+    "year": "2025",
+    "councils": [
+      { "id": "disaster-management", "name": "Disaster Management", "role": "Lead" },
+      { "id": "local-government", "name": "Local Government", "role": "Supporting" },
+      { "id": "public-infrastructure", "name": "Public Infrastructure", "role": "Supporting" },
+      { "id": "housing-lands", "name": "Housing and Lands", "role": "Supporting" }
+    ],
+    "districts": ["Pointe Larue"],
+    "partners": [
+      { "id": "mlgca", "name": "Ministry of Local Government and Community Affairs", "type": "national" },
+      { "id": "construction-contractors", "name": "Civil Construction Contractors", "type": "private" }
+    ],
+    "disasterTypes": ["landslide"],
+    "affectedPopulations": ["elderly", "children"],
+    "coverage": "Pointe Conan residential area",
+    "beneficiaries": "200+ households"
+  },
+  "beoliere-rockfall-mitigation": {
+    "id": "beoliere-rockfall-mitigation",
+    "title": "Des Arpents Beoliere Rockfall Mitigation Works",
+    "description": "Intensive mitigation works to address residual risks from the rockfall that occurred on 15th September 2025 at Des Arpents, Beoliere. Collaboration with key stakeholders to stabilize the affected slope and protect nearby residents.",
+    "category": "resilience",
+    "status": "Ongoing",
+    "startDate": "September 2025",
+    "endDate": "January 2026",
+    "budget": "SCR 8 Million",
+    "lead": "Operations Section - DRMD",
+    "year": "2025",
+    "councils": [
+      { "id": "disaster-management", "name": "Disaster Management", "role": "Lead" },
+      { "id": "public-infrastructure", "name": "Public Infrastructure", "role": "Supporting" },
+      { "id": "housing-lands", "name": "Housing and Lands", "role": "Supporting" }
+    ],
+    "districts": ["Glacis"],
+    "partners": [
+      { "id": "geology-division", "name": "Geology and Geotechnics Division", "type": "national" }
+    ],
+    "disasterTypes": ["landslide"],
+    "affectedPopulations": ["elderly", "children"],
+    "coverage": "Des Arpents, Beoliere area",
+    "beneficiaries": "50+ households"
+  },
+  "world-tsunami-awareness-2025": {
+    "id": "world-tsunami-awareness-2025",
+    "title": "World Tsunami Awareness Day 2025 Campaign",
+    "description": "Educational social media campaign including 'Get To High Ground' photo competition to raise public awareness about tsunami preparedness and encourage community participation in disaster risk reduction.",
+    "category": "preparedness",
+    "status": "Completed",
+    "startDate": "November 2025",
+    "endDate": "November 2025",
+    "budget": "SCR 150,000",
+    "lead": "DRMD Communications Unit",
+    "year": "2025",
+    "councils": [
+      { "id": "disaster-management", "name": "Disaster Management", "role": "Lead" },
+      { "id": "external-communications", "name": "External Communications", "role": "Supporting" },
+      { "id": "education", "name": "Education", "role": "Supporting" }
+    ],
+    "districts": ["Victoria", "Beau Vallon", "Anse Royale", "Praslin", "La Digue", "Glacis"],
+    "partners": [
+      { "id": "media-partners", "name": "Local Media Partners", "type": "national" },
+      { "id": "schools-network", "name": "Schools Network", "type": "national" }
+    ],
+    "disasterTypes": ["tsunami"],
+    "affectedPopulations": ["elderly", "children", "disabilities"],
+    "coverage": "Nationwide",
+    "beneficiaries": "General public"
+  },
+  "youth-drr-engagement-2025": {
+    "id": "youth-drr-engagement-2025",
+    "title": "Youth Engagement in Disaster Risk Reduction",
+    "description": "Partnership with the Seychelles Institute of Technology to engage future mechanical engineers in disaster risk reduction as part of the International Day for Disaster Risk Reduction (IDDRR) 2025 commemorations.",
+    "category": "preparedness",
+    "status": "Completed",
+    "startDate": "October 2025",
+    "endDate": "October 2025",
+    "budget": "SCR 100,000",
+    "lead": "DRMD Community Engagement Unit",
+    "year": "2025",
+    "councils": [
+      { "id": "disaster-management", "name": "Disaster Management", "role": "Lead" },
+      { "id": "education", "name": "Education", "role": "Supporting" }
+    ],
+    "districts": ["Victoria", "Mont Fleuri"],
+    "partners": [
+      { "id": "sit", "name": "Seychelles Institute of Technology", "type": "national" },
+      { "id": "undrr", "name": "UNDRR", "type": "international" }
+    ],
+    "disasterTypes": ["flood", "landslide", "cyclone"],
+    "affectedPopulations": ["children"],
+    "coverage": "Technical education institutions",
+    "beneficiaries": "500+ students"
+  },
+  "december-2023-flood-response": {
+    "id": "december-2023-flood-response",
+    "title": "December 2023 Record Flooding Emergency Response",
+    "description": "Emergency response operations for the record-breaking rainfall on 6th December 2023 - the highest rainfall recorded within 24 hours in Seychelles history. Concentrated flooding affected Northern Mahé districts with overflowing rivers, embankment collapse, road blockages, and power outages.",
+    "category": "response",
+    "status": "Completed",
+    "startDate": "December 2023",
+    "endDate": "January 2024",
+    "lastUpdated": "January 2024",
+    "budget": "SCR 25 Million",
+    "lead": "National Emergency Operations Centre (NEOC)",
+    "year": "2023",
+    "councils": [
+      { "id": "disaster-management", "name": "Disaster Management", "role": "Lead" },
+      { "id": "local-government", "name": "Local Government", "role": "Supporting" },
+      { "id": "public-infrastructure", "name": "Public Infrastructure", "role": "Supporting" },
+      { "id": "social-security", "name": "Social Security", "role": "Supporting" }
+    ],
+    "districts": ["Bel Ombre", "Beau Vallon", "Glacis", "St. Louis"],
+    "partners": [
+      { "id": "red-cross", "name": "Seychelles Red Cross", "type": "national" },
+      { "id": "spdf", "name": "Seychelles People's Defence Forces", "type": "national" },
+      { "id": "puc", "name": "Public Utilities Corporation", "type": "national" }
+    ],
+    "disasterTypes": ["flood", "landslide"],
+    "affectedPopulations": ["elderly", "children", "disabilities"],
+    "coverage": "Northern Mahé",
+    "beneficiaries": "90 households, 350 sheltered, 4 fatalities, 3 missing"
+  },
+  "cccl-explosion-response": {
+    "id": "cccl-explosion-response",
+    "title": "CCCL Explosion National Emergency Response",
+    "description": "National emergency response to the dynamite container explosion at Civil Construction Company Ltd (CCCL), Petite Paris, Cascade on 7th December 2023. Declared a National Emergency by the President with significant structural damage across Providence industrial estate and residential areas.",
+    "category": "response",
+    "status": "Completed",
+    "startDate": "December 2023",
+    "endDate": "March 2024",
+    "lastUpdated": "March 2024",
+    "budget": "SCR 50 Million",
+    "lead": "National Emergency Operations Centre (NEOC)",
+    "year": "2023",
+    "councils": [
+      { "id": "disaster-management", "name": "Disaster Management", "role": "Lead" },
+      { "id": "health", "name": "Health", "role": "Supporting" },
+      { "id": "housing-lands", "name": "Housing and Lands", "role": "Supporting" },
+      { "id": "social-security", "name": "Social Security", "role": "Supporting" },
+      { "id": "public-infrastructure", "name": "Public Infrastructure", "role": "Supporting" }
+    ],
+    "districts": ["Cascade", "Pointe Larue", "Bel Ombre"],
+    "partners": [
+      { "id": "spdf", "name": "Seychelles People's Defence Forces", "type": "national" },
+      { "id": "red-cross", "name": "Seychelles Red Cross", "type": "national" },
+      { "id": "seychelles-police", "name": "Seychelles Police Force", "type": "national" }
+    ],
+    "disasterTypes": ["explosion"],
+    "affectedPopulations": ["elderly", "children", "disabilities"],
+    "coverage": "Cascade, Providence Industrial Estate, surrounding districts",
+    "beneficiaries": "621 affected, 178 injured, 202 sheltered, 345 buildings damaged"
+  },
+  "cccl-recovery-program": {
+    "id": "cccl-recovery-program",
+    "title": "CCCL Explosion Recovery and Rehabilitation Program",
+    "description": "Comprehensive recovery program for residents and businesses affected by the CCCL explosion, including housing repairs, temporary accommodations, business continuity support, and psychological support services.",
+    "category": "recovery",
+    "status": "Ongoing",
+    "startDate": "January 2024",
+    "endDate": "December 2025",
+    "budget": "SCR 150 Million",
+    "lead": "DRMD Recovery Unit",
+    "year": "2024",
+    "councils": [
+      { "id": "disaster-management", "name": "Disaster Management", "role": "Lead" },
+      { "id": "housing-lands", "name": "Housing and Lands", "role": "Supporting" },
+      { "id": "social-security", "name": "Social Security", "role": "Supporting" },
+      { "id": "finance", "name": "Finance", "role": "Supporting" },
+      { "id": "health", "name": "Health", "role": "Supporting" }
+    ],
+    "districts": ["Cascade", "Pointe Larue"],
+    "partners": [
+      { "id": "undp", "name": "UNDP", "type": "international" },
+      { "id": "red-cross", "name": "Seychelles Red Cross", "type": "national" },
+      { "id": "property-management", "name": "Property Management Corporation", "type": "national" }
+    ],
+    "disasterTypes": ["explosion"],
+    "affectedPopulations": ["elderly", "children", "disabilities"],
+    "coverage": "400 affected households, 600 businesses",
+    "beneficiaries": "621+ affected persons"
+  },
+  "flood-recovery-2023": {
+    "id": "flood-recovery-2023",
+    "title": "December 2023 Flood Recovery Program",
+    "description": "Recovery program for communities affected by the record December 2023 flooding, including infrastructure repairs, drainage improvements, embankment reconstruction, and household rehabilitation assistance.",
+    "category": "recovery",
+    "status": "Ongoing",
+    "startDate": "January 2024",
+    "endDate": "June 2025",
+    "budget": "SCR 75 Million",
+    "lead": "DRMD Recovery Unit",
+    "year": "2024",
+    "councils": [
+      { "id": "disaster-management", "name": "Disaster Management", "role": "Lead" },
+      { "id": "public-infrastructure", "name": "Public Infrastructure", "role": "Supporting" },
+      { "id": "local-government", "name": "Local Government", "role": "Supporting" },
+      { "id": "housing-lands", "name": "Housing and Lands", "role": "Supporting" }
+    ],
+    "districts": ["Bel Ombre", "Beau Vallon", "Glacis", "St. Louis"],
+    "partners": [
+      { "id": "puc", "name": "Public Utilities Corporation", "type": "national" },
+      { "id": "slta", "name": "Seychelles Land Transport Agency", "type": "national" },
+      { "id": "undp", "name": "UNDP", "type": "international" }
+    ],
+    "disasterTypes": ["flood", "landslide"],
+    "affectedPopulations": ["elderly", "children"],
+    "coverage": "Northern Mahé flood-affected areas",
+    "beneficiaries": "90+ households"
+  },
+  "early-warning-system": {
+    "id": "early-warning-system",
+    "title": "National Multi-Hazard Early Warning System",
+    "description": "Implementation and maintenance of the national early warning system for floods, tsunamis, cyclones, and landslides. Includes community-level sirens, SMS alerts, and radio broadcast integration.",
+    "category": "preparedness",
+    "status": "Ongoing",
+    "startDate": "January 2020",
+    "endDate": "Ongoing",
+    "budget": "SCR 20 Million annually",
+    "lead": "National Emergency Operations Centre (NEOC)",
+    "year": "2024",
+    "councils": [
+      { "id": "disaster-management", "name": "Disaster Management", "role": "Lead" },
+      { "id": "external-communications", "name": "External Communications", "role": "Supporting" },
+      { "id": "public-utilities", "name": "Public Utilities", "role": "Supporting" }
+    ],
+    "districts": ["Victoria", "Beau Vallon", "Glacis", "Anse Royale", "Praslin", "La Digue", "Cascade", "Bel Ombre"],
+    "partners": [
+      { "id": "met-services", "name": "Seychelles Meteorological Authority", "type": "national" },
+      { "id": "sbc", "name": "Seychelles Broadcasting Corporation", "type": "national" },
+      { "id": "telecom-providers", "name": "Telecom Service Providers", "type": "private" }
+    ],
+    "disasterTypes": ["flood", "tsunami", "cyclone", "landslide"],
+    "affectedPopulations": ["elderly", "children", "disabilities"],
+    "coverage": "Nationwide",
+    "beneficiaries": "Entire population"
+  },
+  "vista-do-mar-stabilisation": {
+    "id": "vista-do-mar-stabilisation",
+    "title": "Vista Do Mar Landslide Monitoring and Stabilisation",
+    "description": "Ongoing monitoring and stabilisation efforts for the deep-seated landslide affecting Vista Do Mar Estate in north Mahé. The slope is in an actively unstable stage and requires continuous monitoring and intervention.",
+    "category": "resilience",
+    "status": "Ongoing",
+    "startDate": "2005",
+    "endDate": "Ongoing",
+    "budget": "SCR 30 Million (cumulative)",
+    "lead": "Operations Section - DRMD",
+    "year": "2024",
+    "councils": [
+      { "id": "disaster-management", "name": "Disaster Management", "role": "Lead" },
+      { "id": "housing-lands", "name": "Housing and Lands", "role": "Supporting" },
+      { "id": "public-infrastructure", "name": "Public Infrastructure", "role": "Supporting" }
+    ],
+    "districts": ["Glacis"],
+    "partners": [
+      { "id": "geology-division", "name": "Geology and Geotechnics Division", "type": "national" },
+      { "id": "international-consultants", "name": "International Geotechnical Consultants", "type": "international" }
+    ],
+    "disasterTypes": ["landslide"],
+    "affectedPopulations": ["elderly", "children"],
+    "coverage": "Vista Do Mar Estate",
+    "beneficiaries": "100+ households"
+  },
+  "pheoc-training": {
+    "id": "pheoc-training",
+    "title": "Public Health Emergency Operations Centre Training",
+    "description": "WHO-certified training program for health and emergency personnel on public health emergency operations. DRMD trainers provide technical support to build national capacity for health emergency response.",
+    "category": "preparedness",
+    "status": "Recurring",
+    "frequency": "Bi-annual",
+    "budget": "SCR 2 Million annually",
+    "lead": "DRMD Training Unit",
+    "year": "2024",
+    "councils": [
+      { "id": "disaster-management", "name": "Disaster Management", "role": "Lead" },
+      { "id": "health", "name": "Health", "role": "Supporting" }
+    ],
+    "districts": ["Victoria"],
+    "partners": [
+      { "id": "who", "name": "World Health Organization", "type": "international" },
+      { "id": "ministry-health", "name": "Ministry of Health", "type": "national" }
+    ],
+    "disasterTypes": ["pandemic"],
+    "affectedPopulations": ["elderly", "children", "disabilities", "pregnant"],
+    "coverage": "Health sector personnel",
+    "beneficiaries": "200+ health and emergency personnel"
+  },
+  "school-drr-program": {
+    "id": "school-drr-program",
+    "title": "School Disaster Risk Reduction Education Program",
+    "description": "Comprehensive school-based disaster risk reduction program including curriculum integration, evacuation drills, and emergency preparedness training for students and teachers.",
+    "category": "preparedness",
     "status": "Ongoing",
     "startDate": "January 2024",
     "endDate": "December 2026",
-    "budget": "₨ 150 Million",
-    "lead": "Coastal Engineering Division",
+    "budget": "SCR 5 Million annually",
+    "lead": "DRMD Community Engagement Unit",
     "year": "2024",
     "councils": [
-      {
-        "id": "public-infrastructure",
-        "name": "Public Infrastructure",
-        "role": "Lead"
-      },
-      {
-        "id": "disaster-management",
-        "name": "Disaster Management", 
-        "role": "Supporting"
-      },
-      {
-        "id": "finance",
-        "name": "Finance",
-        "role": "Supporting"
-      }
+      { "id": "disaster-management", "name": "Disaster Management", "role": "Lead" },
+      { "id": "education", "name": "Education", "role": "Supporting" }
     ],
-    "districts": [
-      "Victoria",
-      "Beau Vallon",
-      "Anse Royale",
-      "Praslin"
-    ],
+    "districts": ["Victoria", "Beau Vallon", "Cascade", "Praslin", "La Digue", "Glacis", "Mont Fleuri"],
     "partners": [
-      {
-        "id": "world-bank",
-        "name": "World Bank",
-        "type": "international"
-      },
-      {
-        "id": "coastal-engineering-ltd",
-        "name": "Coastal Engineering Ltd",
-        "type": "private"
-      }
+      { "id": "ministry-education", "name": "Ministry of Education", "type": "national" },
+      { "id": "unicef", "name": "UNICEF", "type": "international" }
     ],
-    "disasterTypes": ["cyclone", "tsunami", "flood"],
-    "affectedPopulations": ["elderly", "children", "disabilities"],
-    "coverage": "Coastal areas",
-    "beneficiaries": "50,000+ coastal residents"
+    "disasterTypes": ["flood", "tsunami", "fire", "cyclone"],
+    "affectedPopulations": ["children"],
+    "coverage": "All primary and secondary schools",
+    "beneficiaries": "15,000+ students and 1,000+ teachers"
   },
-  
-  "cyclone-response-protocol": {
-    "id": "cyclone-response-protocol",
-    "title": "National Cyclone Emergency Response",
-    "description": "Coordinated emergency response plan for Category 3+ cyclones including evacuation, shelter management, and immediate relief distribution.",
-    "category": "response",
-    "status": "Active",
-    "lastUpdated": "November 2024",
-    "budget": "₨ 75 Million",
-    "lead": "National Emergency Operations Center",
-    "year": "2024",
-    "councils": [
-      {
-        "id": "disaster-management",
-        "name": "Disaster Management",
-        "role": "Lead"
-      },
-      {
-        "id": "health",
-        "name": "Health",
-        "role": "Supporting"
-      },
-      {
-        "id": "local-government",
-        "name": "Local Government",
-        "role": "Supporting"
-      },
-      {
-        "id": "external-communications",
-        "name": "External Communications",
-        "role": "Supporting"
-      }
-    ],
-    "districts": [
-      "Victoria",
-      "Cascade",
-      "Rivière du Rempart",
-      "Praslin",
-      "Anse Royale",
-      "Takamaka",
-      "Mont Fleuri",
-      "Glacis",
-      "Beau Vallon"
-    ],
-    "partners": [
-      {
-        "id": "red-cross",
-        "name": "Seychelles Red Cross Society",
-        "type": "national"
-      },
-      {
-        "id": "undp",
-        "name": "UNDP",
-        "type": "international"
-      }
-    ],
-    "disasterTypes": ["cyclone"],
-    "affectedPopulations": ["elderly", "children", "disabilities", "pregnant"],
-    "coverage": "Nationwide",
-    "beneficiaries": "1.3 million residents"
-  },
-
-  "agricultural-recovery-support": {
-    "id": "agricultural-recovery-support",
-    "title": "Post-Disaster Agricultural Recovery Program",
-    "description": "Comprehensive support for farmers affected by natural disasters including crop replacement, livestock replacement, and equipment subsidies.",
-    "category": "recovery",
-    "status": "Ongoing", 
-    "startDate": "March 2024",
-    "endDate": "February 2027",
-    "budget": "₨ 95 Million",
-    "lead": "Agricultural Recovery Unit",
-    "year": "2024",
-    "councils": [
-      {
-        "id": "agriculture",
-        "name": "Agriculture",
-        "role": "Lead"
-      },
-      {
-        "id": "finance",
-        "name": "Finance",
-        "role": "Supporting"
-      },
-      {
-        "id": "social-security",
-        "name": "Social Security",
-        "role": "Supporting"
-      }
-    ],
-    "districts": [
-      "Cascade",
-      "Rivière du Rempart",
-      "Praslin",
-      "Anse Royale",
-      "Takamaka",
-      "Glacis"
-    ],
-    "partners": [
-      {
-        "id": "farmers-association",
-        "name": "Seychelles Farmers Association",
-        "type": "national"
-      },
-      {
-        "id": "agricultural-bank",
-        "name": "Seychelles Commercial Bank Agricultural Division",
-        "type": "private"
-      },
-      {
-        "id": "fao",
-        "name": "Food and Agriculture Organization",
-        "type": "international"
-      }
-    ],
-    "disasterTypes": ["cyclone", "drought", "flood"],
-    "affectedPopulations": ["elderly"],
-    "coverage": "Agricultural districts",
-    "beneficiaries": "3,500+ farmers"
-  },
-
-  "community-preparedness-training": {
-    "id": "community-preparedness-training",
-    "title": "Community Disaster Preparedness Training Program",
-    "description": "Comprehensive training program for communities on disaster preparedness, first aid, evacuation procedures, and emergency communication.",
-    "category": "preparedness",
-    "status": "Recurring",
-    "frequency": "Quarterly",
-    "budget": "₨ 25 Million annually",
-    "lead": "Community Preparedness Division",
-    "year": "2024",
-    "councils": [
-      {
-        "id": "local-government",
-        "name": "Local Government",
-        "role": "Lead"
-      },
-      {
-        "id": "health",
-        "name": "Health",
-        "role": "Supporting"
-      },
-      {
-        "id": "education",
-        "name": "Education",
-        "role": "Supporting"
-      }
-    ],
-    "districts": [
-      "Victoria",
-      "Cascade",
-      "Mont Fleuri",
-      "Glacis"
-    ],
-    "partners": [
-      {
-        "id": "community-centers",
-        "name": "Community Centers Network",
-        "type": "national"
-      },
-      {
-        "id": "red-cross-training",
-        "name": "Red Cross Training Institute",
-        "type": "national"
-      }
-    ],
-    "disasterTypes": ["cyclone", "flood", "earthquake"],
-    "affectedPopulations": ["elderly", "children", "disabilities"],
-    "coverage": "Urban and suburban communities",
-    "beneficiaries": "2,000+ community members per quarter"
-  },
-
-  "hospital-emergency-preparedness": {
-    "id": "hospital-emergency-preparedness",
-    "title": "Healthcare Facility Emergency Preparedness Enhancement",
-    "description": "Upgrading hospital emergency preparedness including backup power systems, medical supply stockpiling, and staff training for mass casualty events.",
-    "category": "preparedness", 
-    "status": "Active",
-    "startDate": "June 2024",
-    "endDate": "May 2026",
-    "budget": "₨ 80 Million",
-    "lead": "Hospital Emergency Planning Unit",
-    "year": "2024",
-    "councils": [
-      {
-        "id": "health",
-        "name": "Health",
-        "role": "Lead"
-      },
-      {
-        "id": "public-utilities",
-        "name": "Public Utilities",
-        "role": "Supporting"
-      }
-    ],
-    "districts": [
-      "Victoria",
-      "Mont Fleuri",
-      "Praslin",
-      "Anse Royale"
-    ],
-    "partners": [
-      {
-        "id": "ministry-health",
-        "name": "Ministry of Health and Wellness",
-        "type": "national"
-      },
-      {
-        "id": "private-hospitals",
-        "name": "Private Hospitals Association",
-        "type": "private"
-      }
-    ],
-    "disasterTypes": ["cyclone", "earthquake", "flood"],
-    "affectedPopulations": ["elderly", "children", "disabilities", "pregnant"],
-    "coverage": "All major healthcare facilities",
-    "beneficiaries": "Healthcare system serving 1.3M population"
-  },
-
-  "tourism-evacuation-response": {
-    "id": "tourism-evacuation-response", 
-    "title": "Tourist Evacuation and Safety Response Plan",
-    "description": "Emergency response plan for evacuating and ensuring safety of tourists during disasters, including coordination with hotels, resorts, and tour operators.",
-    "category": "response",
-    "status": "Active",
-    "lastUpdated": "September 2024",
-    "budget": "₨ 35 Million",
-    "lead": "Tourism Emergency Response Unit",
-    "year": "2024",
-    "councils": [
-      {
-        "id": "tourism",
-        "name": "Tourism", 
-        "role": "Lead"
-      },
-      {
-        "id": "external-affairs",
-        "name": "External Affairs",
-        "role": "Supporting"
-      },
-      {
-        "id": "disaster-management",
-        "name": "Disaster Management",
-        "role": "Supporting"
-      }
-    ],
-    "districts": [
-      "Beau Vallon",
-      "Anse Royale", 
-      "Praslin",
-      "Victoria"
-    ],
-    "partners": [
-      {
-        "id": "hotel-association",
-        "name": "Seychelles Association of Hotels and Restaurants",
-        "type": "private"
-      },
-      {
-        "id": "tour-operators",
-        "name": "Association of Tour Operators of Seychelles",
-        "type": "private"
-      },
-      {
-        "id": "tourism-board",
-        "name": "Seychelles Tourism Promotion Authority",
-        "type": "national"
-      }
-    ],
-    "disasterTypes": ["cyclone", "tsunami"],
-    "affectedPopulations": ["elderly", "children", "disabilities"],
-    "coverage": "Tourist areas and accommodations",
-    "beneficiaries": "150,000+ annual tourists"
-  },
-
-  "school-infrastructure-resilience": {
-    "id": "school-infrastructure-resilience",
-    "title": "School Infrastructure Resilience and Safety Program", 
-    "description": "Comprehensive program to retrofit schools for disaster resilience, install early warning systems, and establish school-based emergency response teams.",
+  "coastal-protection-infrastructure": {
+    "id": "coastal-protection-infrastructure",
+    "title": "Coastal Protection Infrastructure Program",
+    "description": "Construction and rehabilitation of sea walls, breakwaters, and coastal protection infrastructure to defend against storm surge, coastal erosion, and sea level rise impacts.",
     "category": "resilience",
     "status": "Ongoing",
-    "startDate": "August 2024",
-    "endDate": "July 2027",
-    "budget": "₨ 120 Million",
-    "lead": "School Infrastructure Safety Division",
+    "startDate": "January 2024",
+    "endDate": "December 2027",
+    "budget": "SCR 200 Million",
+    "lead": "DRMD Infrastructure Unit",
     "year": "2024",
     "councils": [
-      {
-        "id": "education",
-        "name": "Education",
-        "role": "Lead"
-      },
-      {
-        "id": "public-infrastructure", 
-        "name": "Public Infrastructure",
-        "role": "Supporting"
-      },
-      {
-        "id": "local-government",
-        "name": "Local Government",
-        "role": "Supporting"
-      }
+      { "id": "disaster-management", "name": "Disaster Management", "role": "Lead" },
+      { "id": "public-infrastructure", "name": "Public Infrastructure", "role": "Supporting" },
+      { "id": "fisheries", "name": "Fisheries", "role": "Supporting" },
+      { "id": "tourism", "name": "Tourism", "role": "Supporting" }
     ],
-    "districts": [
-      "Victoria",
-      "Cascade",
-      "Mont Fleuri",
-      "Glacis",
-      "Praslin"
-    ],
+    "districts": ["Victoria", "Beau Vallon", "Anse Royale", "Praslin", "La Digue"],
     "partners": [
-      {
-        "id": "school-construction-board",
-        "name": "School Construction Board",
-        "type": "national"
-      },
-      {
-        "id": "unicef",
-        "name": "UNICEF",
-        "type": "international"  
-      },
-      {
-        "id": "construction-companies",
-        "name": "Local Construction Companies Consortium",
-        "type": "private"
-      }
+      { "id": "world-bank", "name": "World Bank", "type": "international" },
+      { "id": "gef", "name": "Global Environment Facility", "type": "international" },
+      { "id": "construction-contractors", "name": "Civil Construction Contractors", "type": "private" }
     ],
-    "disasterTypes": ["cyclone", "earthquake", "flood"],
-    "affectedPopulations": ["children"],
-    "coverage": "150+ schools nationwide",
-    "beneficiaries": "75,000+ students and staff"
+    "disasterTypes": ["tsunami", "cyclone", "flood"],
+    "affectedPopulations": ["elderly", "children", "disabilities"],
+    "coverage": "Major coastal settlements",
+    "beneficiaries": "50,000+ coastal residents"
   },
-
-  "fisheries-community-recovery": {
-    "id": "fisheries-community-recovery",
-    "title": "Coastal Fishing Communities Recovery Initiative",
-    "description": "Post-disaster recovery program for fishing communities including boat repair/replacement, fishing equipment subsidies, and alternative livelihood training.",
-    "category": "recovery",
-    "status": "Active",
-    "startDate": "April 2024", 
-    "endDate": "March 2026",
-    "budget": "₨ 45 Million",
-    "lead": "Fisheries Recovery Division",
+  "emergency-shelter-management": {
+    "id": "emergency-shelter-management",
+    "title": "National Emergency Shelter Management Program",
+    "description": "Establishment and management of designated emergency shelters across all districts. Includes shelter assessment, stocking of emergency supplies, and training of shelter managers.",
+    "category": "preparedness",
+    "status": "Ongoing",
+    "startDate": "January 2023",
+    "endDate": "Ongoing",
+    "budget": "SCR 10 Million annually",
+    "lead": "National Emergency Operations Centre (NEOC)",
     "year": "2024",
     "councils": [
-      {
-        "id": "fisheries",
-        "name": "Fisheries",
-        "role": "Lead"
-      },
-      {
-        "id": "social-security",
-        "name": "Social Security", 
-        "role": "Supporting"
-      },
-      {
-        "id": "finance",
-        "name": "Finance",
-        "role": "Supporting"
-      }
+      { "id": "disaster-management", "name": "Disaster Management", "role": "Lead" },
+      { "id": "local-government", "name": "Local Government", "role": "Supporting" },
+      { "id": "social-security", "name": "Social Security", "role": "Supporting" }
     ],
-    "districts": [
-      "Beau Vallon",
-      "Anse Royale",
-      "Praslin",
-      "Rivière du Rempart"
-    ],
+    "districts": ["Victoria", "Beau Vallon", "Cascade", "Anse Royale", "Glacis", "Praslin", "La Digue"],
     "partners": [
-      {
-        "id": "fishermen-association",
-        "name": "Seychelles Fishermen Association",
-        "type": "national"
-      },
-      {
-        "id": "cooperative-societies",
-        "name": "Fishermen Cooperative Societies",
-        "type": "national"
-      },
-      {
-        "id": "development-bank",
-        "name": "Development Bank of Seychelles",
-        "type": "national"
-      }
+      { "id": "red-cross", "name": "Seychelles Red Cross", "type": "national" },
+      { "id": "district-administrators", "name": "District Administrators", "type": "national" }
     ],
-    "disasterTypes": ["cyclone", "tsunami"],
-    "affectedPopulations": ["elderly"],
-    "coverage": "Coastal fishing communities",
-    "beneficiaries": "1,200+ fishing families"
+    "disasterTypes": ["flood", "cyclone", "tsunami", "landslide", "fire"],
+    "affectedPopulations": ["elderly", "children", "disabilities", "pregnant"],
+    "coverage": "All 25 districts",
+    "beneficiaries": "Capacity for 5,000+ evacuees"
+  },
+  "hazard-mapping-program": {
+    "id": "hazard-mapping-program",
+    "title": "National Hazard Mapping and Risk Assessment",
+    "description": "Comprehensive hazard mapping initiative covering flood zones, landslide-prone areas, tsunami inundation zones, and fire-risk areas. Used for land-use planning and emergency response planning.",
+    "category": "resilience",
+    "status": "Ongoing",
+    "startDate": "January 2023",
+    "endDate": "December 2025",
+    "budget": "SCR 15 Million",
+    "lead": "Operations Section - DRMD",
+    "year": "2024",
+    "councils": [
+      { "id": "disaster-management", "name": "Disaster Management", "role": "Lead" },
+      { "id": "housing-lands", "name": "Housing and Lands", "role": "Supporting" },
+      { "id": "local-government", "name": "Local Government", "role": "Supporting" }
+    ],
+    "districts": ["Victoria", "Beau Vallon", "Cascade", "Glacis", "St. Louis", "Praslin"],
+    "partners": [
+      { "id": "geology-division", "name": "Geology and Geotechnics Division", "type": "national" },
+      { "id": "undp", "name": "UNDP", "type": "international" },
+      { "id": "gis-unit", "name": "National GIS Unit", "type": "national" }
+    ],
+    "disasterTypes": ["flood", "landslide", "tsunami", "fire"],
+    "affectedPopulations": ["elderly", "children", "disabilities"],
+    "coverage": "All main islands",
+    "beneficiaries": "Planning authorities and general public"
+  },
+  "covid-19-response": {
+    "id": "covid-19-response",
+    "title": "COVID-19 Pandemic Response Coordination",
+    "description": "DRMD coordination of COVID-19 response including establishment of Public Health Emergency Operation Centre (PHEOC) and technical support through WHO-certified trainers. Led initial coordination efforts with health authorities.",
+    "category": "response",
+    "status": "Completed",
+    "startDate": "March 2020",
+    "endDate": "December 2022",
+    "lastUpdated": "December 2022",
+    "budget": "SCR 10 Million",
+    "lead": "National Emergency Operations Centre (NEOC)",
+    "year": "2020",
+    "councils": [
+      { "id": "disaster-management", "name": "Disaster Management", "role": "Lead" },
+      { "id": "health", "name": "Health", "role": "Supporting" },
+      { "id": "external-communications", "name": "External Communications", "role": "Supporting" }
+    ],
+    "districts": ["Victoria", "Beau Vallon", "Praslin", "La Digue"],
+    "partners": [
+      { "id": "who", "name": "World Health Organization", "type": "international" },
+      { "id": "ministry-health", "name": "Ministry of Health", "type": "national" }
+    ],
+    "disasterTypes": ["pandemic"],
+    "affectedPopulations": ["elderly", "children", "disabilities", "pregnant"],
+    "coverage": "Nationwide",
+    "beneficiaries": "Entire population"
+  },
+  "landfill-fire-response-2020": {
+    "id": "landfill-fire-response-2020",
+    "title": "Providence Landfill Fire Emergency Response",
+    "description": "Emergency response to the significant fire at Providence Industrial Estate landfill from 19th-25th September 2020. Response operations were active for 6 days with continued high alert and surveillance maintained.",
+    "category": "response",
+    "status": "Completed",
+    "startDate": "September 2020",
+    "endDate": "September 2020",
+    "lastUpdated": "October 2020",
+    "budget": "SCR 5 Million",
+    "lead": "National Emergency Operations Centre (NEOC)",
+    "year": "2020",
+    "councils": [
+      { "id": "disaster-management", "name": "Disaster Management", "role": "Lead" },
+      { "id": "health", "name": "Health", "role": "Supporting" },
+      { "id": "public-utilities", "name": "Public Utilities", "role": "Supporting" }
+    ],
+    "districts": ["Cascade"],
+    "partners": [
+      { "id": "srfa", "name": "Seychelles Fire and Rescue Services Agency", "type": "national" },
+      { "id": "waste-management", "name": "Landscape and Waste Management Agency", "type": "national" }
+    ],
+    "disasterTypes": ["fire"],
+    "affectedPopulations": ["elderly", "children"],
+    "coverage": "Providence Industrial Estate",
+    "beneficiaries": "Industrial estate workers and nearby residents"
+  },
+  "fund-resilience-initiative": {
+    "id": "fund-resilience-initiative",
+    "title": "Fund Resilience, Not Disasters Initiative",
+    "description": "National initiative under the IDDRR 2025 global theme promoting investment in proactive disaster risk reduction measures. Advocating for resilience funding over post-disaster spending.",
+    "category": "resilience",
+    "status": "Ongoing",
+    "startDate": "October 2025",
+    "endDate": "December 2026",
+    "budget": "SCR 5 Million",
+    "lead": "DRMD Policy Unit",
+    "year": "2025",
+    "councils": [
+      { "id": "disaster-management", "name": "Disaster Management", "role": "Lead" },
+      { "id": "finance", "name": "Finance", "role": "Supporting" },
+      { "id": "external-affairs", "name": "External Affairs", "role": "Supporting" }
+    ],
+    "districts": ["Victoria"],
+    "partners": [
+      { "id": "undp", "name": "UNDP", "type": "international" },
+      { "id": "world-bank", "name": "World Bank", "type": "international" },
+      { "id": "ministry-finance", "name": "Ministry of Finance", "type": "national" }
+    ],
+    "disasterTypes": ["flood", "landslide", "cyclone", "tsunami"],
+    "affectedPopulations": ["elderly", "children", "disabilities"],
+    "coverage": "National policy level",
+    "beneficiaries": "Entire population"
   }
 }
+

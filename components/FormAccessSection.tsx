@@ -37,12 +37,12 @@ const FormAccessSection: React.FC = () => {
       <div className="container">
         <div className="row">
           <div className="col-xl-8 offset-xl-2 col-lg-8 offset-lg-2">
-            <div className="content-title style1 text-center mb-40" data-aos="fade-up">
+            <div className="content-title style1 text-center mb-40">
               <span>Secure Access <img src="/img/section-shape.png" alt="Shape" /></span>
               <h2>DRMD & District Official Portal</h2>
               <p>Authorized officials can access secure forms, upload documents, and manage district-specific resources.</p>
             </div>
-            <div className="row" data-aos="fade-up">
+            <div className="row">
               {accessCards.map((card, index) => (
                 <div className="col-md-6 mb-4" key={index}>
                   <div className="card h-100" style={{ borderRadius: "10px", boxShadow: "0 5px 15px rgba(0,0,0,0.1)" }}>

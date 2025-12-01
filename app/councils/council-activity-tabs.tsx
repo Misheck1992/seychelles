@@ -547,15 +547,16 @@ export function CouncilActivityTabs({
                 <div className="card-header" style={{ backgroundColor: 'rgba(51, 143, 122, 0.1)' }}>
                   <h5 className="mb-0">Council Composition</h5>
                 </div>
+                {/* Source: https://www.drmd.sc/meet-the-team/ */}
                 <div className="card-body">
                   <ul className="list-unstyled">
-                    <li className="mb-2"><strong>Total Members:</strong> 25</li>
-                    <li className="mb-2"><strong>Ex-Officio Members:</strong> 12</li>
-                    <li className="mb-2"><strong>Ministerial Representatives:</strong> 10</li>
-                    <li><strong>External Experts:</strong> 3</li>
+                    <li className="mb-2"><strong>Director General:</strong> Robert Ernesta</li>
+                    <li className="mb-2"><strong>Chief Risk Management Officer:</strong> Daniel Cetoupe</li>
+                    <li className="mb-2"><strong>Chief Response Officer:</strong> Cliff Alissop</li>
+                    <li><strong>Sections:</strong> Operations, HR & Admin, NEOC</li>
                   </ul>
                   <div className="text-center mt-3">
-                    <span className="badge bg-success">Active Since 2016</span>
+                    <span className="badge bg-success">Established 2014</span>
                   </div>
                 </div>
               </div>
@@ -576,18 +577,19 @@ export function CouncilActivityTabs({
                           <th>Actions</th>
                         </tr>
                       </thead>
+                      {/* Source: https://www.drmd.sc/meet-the-team/ */}
                       <tbody>
                         <tr>
                           <td>
                             <div className="d-flex align-items-center">
-                              <img src="/img/raj.png" alt="Profile" className="rounded-circle me-2" width={40} />
-                              <div>Dr. Rajesh Ramphul</div>
+                              <img src="/img/placeholder.jpg" alt="Profile" className="rounded-circle me-2" width={40} />
+                              <div>Robert Ernesta</div>
                             </div>
                           </td>
-                          <td>Chairperson</td>
-                          <td>Public Infrastructure</td>
+                          <td>Director General</td>
+                          <td>DRMD</td>
                           <td>
-                            <a href="mailto:r.ramphul@drmd.gov.mu" className="btn btn-sm btn-outline-primary me-1"><i className="ri-mail-line"></i></a>
+                            <a href="mailto:info@drmd.sc" className="btn btn-sm btn-outline-primary me-1"><i className="ri-mail-line"></i></a>
                             <a href="#" className="btn btn-sm btn-outline-secondary"><i className="ri-profile-line"></i></a>
                           </td>
                         </tr>
@@ -595,13 +597,27 @@ export function CouncilActivityTabs({
                           <td>
                             <div className="d-flex align-items-center">
                               <img src="/img/placeholder.jpg" alt="Profile" className="rounded-circle me-2" width={40} />
-                              <div>Mrs. Leela Devi</div>
+                              <div>Daniel Cetoupe</div>
                             </div>
                           </td>
-                          <td>Deputy Chair</td>
-                          <td>Environment</td>
+                          <td>Chief Risk Management Officer</td>
+                          <td>Operations Section</td>
                           <td>
-                            <a href="mailto:l.devi@drmd.gov.mu" className="btn btn-sm btn-outline-primary me-1"><i className="ri-mail-line"></i></a>
+                            <a href="mailto:info@drmd.sc" className="btn btn-sm btn-outline-primary me-1"><i className="ri-mail-line"></i></a>
+                            <a href="#" className="btn btn-sm btn-outline-secondary"><i className="ri-profile-line"></i></a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div className="d-flex align-items-center">
+                              <img src="/img/placeholder.jpg" alt="Profile" className="rounded-circle me-2" width={40} />
+                              <div>Cliff Alissop</div>
+                            </div>
+                          </td>
+                          <td>Chief Response Officer</td>
+                          <td>National Emergency Operations Centre</td>
+                          <td>
+                            <a href="mailto:info@drmd.sc" className="btn btn-sm btn-outline-primary me-1"><i className="ri-mail-line"></i></a>
                             <a href="#" className="btn btn-sm btn-outline-secondary"><i className="ri-profile-line"></i></a>
                           </td>
                         </tr>

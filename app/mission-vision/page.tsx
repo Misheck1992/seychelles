@@ -5,6 +5,7 @@ import { aboutContent } from '@/lib/data';
 import Image from 'next/image';
 import Link from 'next/link';
 
+// Source: https://www.drmd.sc/about-us/
 export default function MissionVisionPage() {
   return (
     <div className="page-wrapper">
@@ -13,8 +14,8 @@ export default function MissionVisionPage() {
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-8">
-              <h1 className="display-4 fw-bold">Mission & Vision</h1>
-              <p className="lead">Our guiding principles and aspirations</p>
+              <h1 className="display-4 fw-bold">Mandate, Vision, Mission & Values</h1>
+              <p className="lead">Be Aware, Be Prepared!</p>
               <nav aria-label="breadcrumb">
                 <ol className="breadcrumb mb-0">
                   <li className="breadcrumb-item"><Link href="/" className="text-white">Home</Link></li>
@@ -128,35 +129,24 @@ export default function MissionVisionPage() {
         </div>
       </section>
 
-      {/* Core Values */}
+      {/* Core Values - Source: https://www.drmd.sc/about-us/ */}
       <section className="py-5 bg-light">
         <div className="container">
           <h2 className="text-center mb-5">Our Core Values</h2>
-          
-          <div className="row g-4">
-            <div className="col-md-6 col-lg-3">
+
+          <div className="row g-4 justify-content-center">
+            <div className="col-md-6 col-lg-4">
               <div className="card h-100 border-0 shadow-sm">
                 <div className="card-body text-center p-4">
                   <div className="mb-3">
-                    <i className="flaticon-heart text-primary" style={{ fontSize: '48px' }}></i>
+                    <i className="flaticon-campaign text-primary" style={{ fontSize: '48px' }}></i>
                   </div>
-                  <h3 className="h4">Compassion</h3>
-                  <p>We care deeply about the communities we serve and the people affected by disasters.</p>
+                  <h3 className="h4">Excellence</h3>
+                  <p>We strive for excellence in all our disaster risk management activities.</p>
                 </div>
               </div>
             </div>
-            <div className="col-md-6 col-lg-3">
-              <div className="card h-100 border-0 shadow-sm">
-                <div className="card-body text-center p-4">
-                  <div className="mb-3">
-                    <i className="flaticon-support text-primary" style={{ fontSize: '48px' }}></i>
-                  </div>
-                  <h3 className="h4">Service</h3>
-                  <p>We are dedicated to serving the public and meeting their needs during disasters.</p>
-                </div>
-              </div>
-            </div>
-            <div className="col-md-6 col-lg-3">
+            <div className="col-md-6 col-lg-4">
               <div className="card h-100 border-0 shadow-sm">
                 <div className="card-body text-center p-4">
                   <div className="mb-3">
@@ -167,14 +157,36 @@ export default function MissionVisionPage() {
                 </div>
               </div>
             </div>
-            <div className="col-md-6 col-lg-3">
+            <div className="col-md-6 col-lg-4">
               <div className="card h-100 border-0 shadow-sm">
                 <div className="card-body text-center p-4">
                   <div className="mb-3">
-                    <i className="flaticon-campaign text-primary" style={{ fontSize: '48px' }}></i>
+                    <i className="flaticon-support text-primary" style={{ fontSize: '48px' }}></i>
                   </div>
-                  <h3 className="h4">Excellence</h3>
-                  <p>We strive for excellence in all our activities and continuously improve our services.</p>
+                  <h3 className="h4">Inclusivity</h3>
+                  <p>We ensure all communities are included in disaster risk management efforts.</p>
+                </div>
+              </div>
+            </div>
+            <div className="col-md-6 col-lg-4">
+              <div className="card h-100 border-0 shadow-sm">
+                <div className="card-body text-center p-4">
+                  <div className="mb-3">
+                    <i className="flaticon-heart text-primary" style={{ fontSize: '48px' }}></i>
+                  </div>
+                  <h3 className="h4">Compassion</h3>
+                  <p>We care deeply about the communities we serve and the people affected by disasters.</p>
+                </div>
+              </div>
+            </div>
+            <div className="col-md-6 col-lg-4">
+              <div className="card h-100 border-0 shadow-sm">
+                <div className="card-body text-center p-4">
+                  <div className="mb-3">
+                    <i className="flaticon-verified text-primary" style={{ fontSize: '48px' }}></i>
+                  </div>
+                  <h3 className="h4">Passion</h3>
+                  <p>We are passionate about protecting lives and building disaster resilience.</p>
                 </div>
               </div>
             </div>

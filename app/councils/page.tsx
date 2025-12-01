@@ -41,7 +41,7 @@ export default function CouncilsPage() {
               <div className="section-title style3 mb-30">
                 <div className="row align-items-center">
                   <div className="col-lg-7 col-md-6">
-                    <span>Agriculture Council Profile</span>
+                    <span>Agriculture Department Profile</span>
                   </div>
                   <div className="col-lg-5 col-md-6">
                     <div className="ministry-dropdown-wrapper text-md-end mb-30">
@@ -87,32 +87,15 @@ export default function CouncilsPage() {
                 <h2>National Disaster Risk Reduction and
                   Management Council</h2>
               </div>
+              {/* Source: https://www.drmd.sc/about-us/ */}
               <div className="about-content">
-                <p>The National Disaster Risk Reduction and
-                  Management Council (DRMD) is the apex body
-                  responsible for coordinating and overseeing
-                  disaster management strategies across
-                  Seychelles.</p>
+                <p>The Disaster Risk Management Division is established for the effective management of disaster through a comprehensive and integrated all-hazard approach and for matters connected therewith or incidental thereto.</p>
                 <div className="row mt-4">
-                  <div className="col-md-6">
+                  <div className="col-md-12">
                     <ul className="content-feature-list list-style">
-                      <li><i className="ri-checkbox-circle-line" />Established:
-                        2016</li>
-                      <li><i className="ri-checkbox-circle-line" />Total
-                        Members: 25</li>
-                      <li><i className="ri-checkbox-circle-line" />Ministerial
-                        Representation: 20+
-                        Ministries</li>
-                    </ul>
-                  </div>
-                  <div className="col-md-6">
-                    <ul className="content-feature-list list-style">
-                      <li><i className="ri-checkbox-circle-line" />Emergency
-                        Coordination Centers: 6</li>
-                      <li><i className="ri-checkbox-circle-line" />Active
-                        Response Teams: 12</li>
-                      <li><i className="ri-checkbox-circle-line" />Annual
-                        Budget: ₨ 250 Million</li>
+                      <li><i className="ri-checkbox-circle-line" />Established: 2014 (Disaster Risk Management Act)</li>
+                      <li><i className="ri-checkbox-circle-line" />Vision: To be the centre of excellence for disaster risk management amongst small island developing states.</li>
+                      <li><i className="ri-checkbox-circle-line" />Mission: To promote disaster risk management best practices nationally. To strive for a disaster resilient Seychelles.</li>
                     </ul>
                   </div>
                 </div>
@@ -135,23 +118,23 @@ export default function CouncilsPage() {
                 </div>
               </div>
             </div>
+            {/* Source: https://www.drmd.sc/meet-the-team/ */}
             <div className="col-lg-4">
               <div className="card h-10 bg-white p-3 shadow-sm">
-                <h5 className="card-title p-2 border-bottom">Council
+                <h5 className="card-title p-2 border-bottom">Division
                   Leadership</h5>
                 <div className="text-center mb-3">
-                  <img src="/img/raj.png" alt="Council Chair" className="rounded-circle mb-3" width={150} />
-                  <h6>Dr. Rajesh Ramphul</h6>
-                  <p className="text-muted">Chairperson,
+                  <img src="/img/placeholder.jpg" alt="Director General" className="rounded-circle mb-3" width={150} />
+                  <h6>Robert Ernesta</h6>
+                  <p className="text-muted">Director General,
                     DRMD</p>
                 </div>
                 <ul className="list-unstyled">
-                  <li className="mb-2"><strong>Appointment:</strong>
-                    April 2022</li>
-                  <li className="mb-2"><strong>Tenure:</strong> 4
-                    Years</li>
-                  <li><strong>Ministerial Background:</strong>
-                    Public Infrastructure</li>
+                  <li className="mb-2"><strong>Position:</strong>
+                    Director General</li>
+                  <li className="mb-2"><strong>Organization:</strong> Disaster Risk Management Division</li>
+                  <li><strong>Location:</strong>
+                    Global Village, Mont Fleuri, Mahe</li>
                 </ul>
               </div>
             </div>
@@ -594,39 +577,35 @@ export default function CouncilsPage() {
                 {/* (Similar document list structure as district page) */}
               </div>
               {/* Council Members Tab */}
+              {/* Source: https://www.drmd.sc/meet-the-team/ */}
               <div className="tab-pane fade" id="members" role="tabpanel">
-                <h4 className="mb-4">National Council
-                  Membership</h4>
+                <h4 className="mb-4">DRMD Team
+                  Structure</h4>
                 <div className="row">
                   <div className="col-lg-4 mb-4">
                     <div className="card border-0 shadow-sm h-100">
                       <div className="card-header" style={{ backgroundColor: 'rgba(51, 143, 122, 0.1)' }}>
-                        <h5 className="mb-0">Council
-                          Composition</h5>
+                        <h5 className="mb-0">Division
+                          Structure</h5>
                       </div>
                       <div className="card-body">
                         <ul className="list-unstyled">
                           <li className="mb-2">
-                            <strong>Total
-                              Members:</strong> 25
+                            <strong>Director General&apos;s Secretariat</strong>
                           </li>
                           <li className="mb-2">
-                            <strong>Ex-Officio
-                              Members:</strong> 12
+                            <strong>HR, Administration &amp; Finance Section</strong>
                           </li>
                           <li className="mb-2">
-                            <strong>Ministerial
-                              Representatives:</strong>
-                            10
+                            <strong>Operations Section</strong>
                           </li>
                           <li>
-                            <strong>External
-                              Experts:</strong> 3
+                            <strong>National Emergency Operations Centre</strong>
                           </li>
                         </ul>
                         <div className="text-center mt-3">
-                          <span className="badge bg-success">Active
-                            Since 2016</span>
+                          <span className="badge bg-success">Established
+                            2014</span>
                         </div>
                       </div>
                     </div>
@@ -634,8 +613,8 @@ export default function CouncilsPage() {
                   <div className="col-lg-8">
                     <div className="card border-0 shadow-sm mb-4">
                       <div className="card-header" style={{ backgroundColor: 'rgba(51, 143, 122, 0.1)' }}>
-                        <h5 className="mb-0">Key Council
-                          Members</h5>
+                        <h5 className="mb-0">Key DRMD
+                          Staff</h5>
                       </div>
                       <div className="card-body p-0">
                         <div className="table-responsive">
@@ -644,7 +623,7 @@ export default function CouncilsPage() {
                               <tr>
                                 <th>Name</th>
                                 <th>Position</th>
-                                <th>Ministry/Organization</th>
+                                <th>Section</th>
                                 <th>Actions</th>
                               </tr>
                             </thead>
@@ -652,67 +631,56 @@ export default function CouncilsPage() {
                               <tr>
                                 <td>
                                   <div className="d-flex align-items-center">
-                                    <img src="assets/img/raj.png" alt="Profile" className="rounded-circle me-2" width={40} />
-                                    <div>Dr.
-                                      Rajesh
-                                      Ramphul</div>
+                                    <img src="/img/placeholder.jpg" alt="Profile" className="rounded-circle me-2" width={40} />
+                                    <div>Robert Ernesta</div>
                                   </div>
                                 </td>
-                                <td>Chairperson</td>
-                                <td>Public
-                                  Infrastructure</td>
+                                <td>Director General</td>
+                                <td>DRMD</td>
                                 <td>
-                                  <a href="mailto:r.ramphul@drmd.gov.mu" className="btn btn-sm btn-outline-primary me-1"><i className="ri-mail-line" /></a>
+                                  <a href="mailto:info@drmd.sc" className="btn btn-sm btn-outline-primary me-1"><i className="ri-mail-line" /></a>
                                   <a href="#" className="btn btn-sm btn-outline-secondary"><i className="ri-profile-line" /></a>
                                 </td>
                               </tr>
                               <tr>
                                 <td>
                                   <div className="d-flex align-items-center">
-                                    <img src="assets/img/raj.png" alt="Profile" className="rounded-circle me-2" width={40} />
-                                    <div>Marie
-                                      Lafosse</div>
+                                    <img src="/img/placeholder.jpg" alt="Profile" className="rounded-circle me-2" width={40} />
+                                    <div>Daniel Cetoupe</div>
                                   </div>
                                 </td>
-                                <td>Deputy
-                                  Chairperson</td>
-                                <td>Environment
-                                  Ministry</td>
+                                <td>Chief Risk Management Officer</td>
+                                <td>Operations Section</td>
                                 <td>
-                                  <a href="mailto:m.lafosse@drmd.gov.mu" className="btn btn-sm btn-outline-primary me-1"><i className="ri-mail-line" /></a>
+                                  <a href="mailto:info@drmd.sc" className="btn btn-sm btn-outline-primary me-1"><i className="ri-mail-line" /></a>
                                   <a href="#" className="btn btn-sm btn-outline-secondary"><i className="ri-profile-line" /></a>
                                 </td>
                               </tr>
                               <tr>
                                 <td>
                                   <div className="d-flex align-items-center">
-                                    <img src="assets/img/raj.png" alt="Profile" className="rounded-circle me-2" width={40} />
-                                    <div>Ahmed
-                                      Peerally</div>
+                                    <img src="/img/placeholder.jpg" alt="Profile" className="rounded-circle me-2" width={40} />
+                                    <div>Cliff Alissop</div>
                                   </div>
                                 </td>
-                                <td>Secretary</td>
-                                <td>Civil
-                                  Service</td>
+                                <td>Chief Response Officer</td>
+                                <td>National Emergency Operations Centre</td>
                                 <td>
-                                  <a href="mailto:a.peerally@drmd.gov.mu" className="btn btn-sm btn-outline-primary me-1"><i className="ri-mail-line" /></a>
+                                  <a href="mailto:info@drmd.sc" className="btn btn-sm btn-outline-primary me-1"><i className="ri-mail-line" /></a>
                                   <a href="#" className="btn btn-sm btn-outline-secondary"><i className="ri-profile-line" /></a>
                                 </td>
                               </tr>
                               <tr>
                                 <td>
                                   <div className="d-flex align-items-center">
-                                    <img src="assets/img/raj.png" alt="Profile" className="rounded-circle me-2" width={40} />
-                                    <div>Sarah
-                                      Ramdhani</div>
+                                    <img src="/img/placeholder.jpg" alt="Profile" className="rounded-circle me-2" width={40} />
+                                    <div>Doreen Bastienne</div>
                                   </div>
                                 </td>
-                                <td>Technical
-                                  Advisor</td>
-                                <td>Meteorological
-                                  Services</td>
+                                <td>Senior HR &amp; Budget Management Officer</td>
+                                <td>HR, Admin &amp; Finance</td>
                                 <td>
-                                  <a href="mailto:s.ramdhani@drmd.gov.mu" className="btn btn-sm btn-outline-primary me-1"><i className="ri-mail-line" /></a>
+                                  <a href="mailto:info@drmd.sc" className="btn btn-sm btn-outline-primary me-1"><i className="ri-mail-line" /></a>
                                   <a href="#" className="btn btn-sm btn-outline-secondary"><i className="ri-profile-line" /></a>
                                 </td>
                               </tr>

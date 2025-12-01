@@ -18,11 +18,11 @@ const CommunityCTASection: React.FC = () => {
       <div className="container">
         <div className="row">
           <div className="col-xl-8 offset-xl-2 col-lg-8 offset-lg-2">
-            <div className="content-title style1 text-center mb-40" data-aos="fade-up">
+            <div className="content-title style1 text-center mb-40">
               <span>Be Prepared <img src="/img/section-shape.png" alt="Shape" /></span>
               <h2>Join Our Community Preparedness Program</h2>
             </div>
-            <div className="cta-btn" data-aos="fade-up">
+            <div className="cta-btn">
               {buttons.map((button, index) => (
                 <a key={index} href={button.link} className={`btn ${button.style}`}>
                   {button.text}

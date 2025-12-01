@@ -18,7 +18,7 @@ const EmergencyPortalSection: React.FC = () => {
 
   return (
     <div className="container mt-100">
-      <div className="donate-box ptb-100" data-aos="fade-up" style={{ backgroundColor: "#f5f5f5" }}>
+      <div className="donate-box ptb-100" style={{ backgroundColor: "#f5f5f5" }}>
         <img src="/img/shape-6.png" alt="Shape" className="donate-shape-one" />
         <div className="content-title style2 text-center mb-40">
           <span style={{ color: "#338f7a" }}>Disaster Preparedness<img src="/img/section-shape.png" alt="Shape" /></span>

@@ -83,21 +83,20 @@ export default function ContactPage() {
                   </form>
                 </div>
               </div>
+              {/* Source: https://www.drmd.sc/ */}
               <div className="col-lg-4">
                 <div className="contact-item-wrap">
                   <div className="contact-item">
                     <h3>Our Address</h3>
-                    <p>2767 Sunrise Street, 127 St. Josef Avenue, Florida, USA</p>
+                    <p>Global Village, Suite no 3, Mont Fleuri, Mahe<br />P.O. Box 113, Victoria, Mahe, Seychelles</p>
                   </div>
                   <div className="contact-item">
                     <h3>Email Address</h3>
-                    <a href="https://templates.hibotheme.com/cdn-cgi/l/email-protection#fc9499909093bc9f909591d29f9391"><span className="__cf_email__" data-cfemail="4b232e2727240b2827222665282426">[email&nbsp;protected]</span></a>
-                    <a href="https://templates.hibotheme.com/cdn-cgi/l/email-protection#71020401011e030531121d181c5f121e1c"><span className="__cf_email__" data-cfemail="70030500001f020430131c191d5e131f1d">[email&nbsp;protected]</span></a>
+                    <a href="mailto:info@drmd.sc">info@drmd.sc</a>
                   </div>
                   <div className="contact-item">
-                    <h3>24/7 Support</h3>
-                    <a href="tel:9094630378">909-463-0378</a>
-                    <a href="tel:tel:4074386389">407-438-6389</a>
+                    <h3>DRMD Hotline</h3>
+                    <a href="tel:+2484389898">+248 4389898</a>
                   </div>
                   <div className="contact-item">
                     <h3>Follow us</h3>

@@ -21,7 +21,8 @@ const councilData = {
       position: 'Chairperson',
       appointment: 'June 2022',
       tenure: '3 Years',
-      background: 'Agricultural Sciences'
+      background: 'Agricultural Sciences',
+      image: '/images/team/placeholder-user.jpg'
     },
     members: [
       {
@@ -65,7 +66,8 @@ const councilData = {
       position: 'Chairperson',
       appointment: 'August 2023',
       tenure: '4 Years',
-      background: 'Public Administration'
+      background: 'Public Administration',
+      image: '/images/team/placeholder-user.jpg'
     },
     members: [
       {
@@ -109,7 +111,8 @@ const councilData = {
       position: 'Chairperson',
       appointment: 'July 2022',
       tenure: '3 Years',
-      background: 'Educational Administration'
+      background: 'Educational Administration',
+      image: '/images/team/placeholder-user.jpg'
     },
     members: [
       {
@@ -150,7 +153,8 @@ const councilData = {
       position: 'Chairperson',
       appointment: 'September 2023',
       tenure: '4 Years',
-      background: 'International Relations'
+      background: 'International Relations',
+      image: '/images/team/placeholder-user.jpg'
     },
     members: [
       {
@@ -176,47 +180,56 @@ const councilData = {
       }
     ]
   },
+  // Source: https://www.drmd.sc/about-us/ and https://www.drmd.sc/meet-the-team/
   'disaster-management': {
     name: 'Disaster Management',
-    title: 'Disaster Management Council',
-    description: 'The Disaster Management Council is the primary coordinating body for all disaster-related activities in Seychelles, overseeing prevention, preparedness, response, and recovery efforts nationwide.',
-    established: '2016',
-    memberCount: '25',
-    ministerialRepresentation: '20+',
-    coordinationCenters: '6',
-    responseTeams: '12',
-    annualBudget: '₨ 250 Million',
-    partnerOrganizations: ['usaid', 'undp', 'red-cross', 'world-bank'],
-    disasterTypes: ['cyclone', 'flood', 'drought', 'earthquake', 'tsunami'],
+    title: 'Disaster Risk Management Division',
+    description: 'The Disaster Risk Management Division is established for the effective management of disaster through a comprehensive and integrated all-hazard approach and for matters connected therewith or incidental thereto.',
+    established: '2014',
+    memberCount: '23',
+    ministerialRepresentation: 'N/A',
+    coordinationCenters: '1',
+    responseTeams: '1',
+    annualBudget: 'N/A',
+    partnerOrganizations: ['undp', 'red-cross'],
+    disasterTypes: ['flooding', 'landslides', 'fire', 'tsunami', 'storms', 'heavy-wind'],
     affectedPopulations: ['elderly', 'children', 'disabilities', 'pregnant'],
     leadership: {
-      name: 'Dr. Rajesh Ramphul',
-      position: 'Chairperson',
-      appointment: 'April 2022',
-      tenure: '4 Years',
-      background: 'Public Infrastructure'
+      name: 'Robert Ernesta',
+      position: 'Director General',
+      appointment: 'N/A',
+      tenure: 'N/A',
+      background: 'Disaster Risk Management',
+      image: '/images/team/robert-ernesta.jpg'
     },
     members: [
       {
         id: 'dm-mem-1',
-        name: 'Dr. Rajesh Ramphul',
-        position: 'Chairperson',
-        organization: 'Ministry of Public Infrastructure',
-        contact: 'r.ramphul@drmd.gov.mu'
+        name: 'Robert Ernesta',
+        position: 'Director General',
+        organization: "Director General's Secretariat",
+        contact: 'info@drmd.sc'
       },
       {
         id: 'dm-mem-2',
-        name: 'Gen. Vimal Sharma',
-        position: 'Deputy Chair',
-        organization: 'National Security Council',
-        contact: 'v.sharma@nsc.gov.mu'
+        name: 'Doreen Bastienne',
+        position: 'Senior Human Resources & Budget Management Officer',
+        organization: 'Human Resources, Administration and Finance Section',
+        contact: 'info@drmd.sc'
       },
       {
         id: 'dm-mem-3',
-        name: 'Dr. Amina Cassim',
-        position: 'Secretary',
-        organization: 'DRMD Secretariat',
-        contact: 'a.cassim@drmd.gov.mu'
+        name: 'Daniel Cetoupe',
+        position: 'Chief Risk Management Officer',
+        organization: 'Operations Section',
+        contact: 'info@drmd.sc'
+      },
+      {
+        id: 'dm-mem-4',
+        name: 'Cliff Alissop',
+        position: 'Chief Response Officer',
+        organization: 'National Emergency Operations Centre',
+        contact: 'info@drmd.sc'
       }
     ]
   },
@@ -238,7 +251,8 @@ const councilData = {
       position: 'Chairperson',
       appointment: 'January 2023',
       tenure: '4 Years',
-      background: 'Public Health'
+      background: 'Public Health',
+      image: '/images/team/placeholder-user.jpg'
     },
     members: [
       {
@@ -279,7 +293,8 @@ const councilData = {
       position: 'Chairperson',
       appointment: 'March 2023',
       tenure: '3 Years',
-      background: 'Public Relations'
+      background: 'Public Relations',
+      image: '/images/team/placeholder-user.jpg'
     },
     members: [
       {
@@ -320,7 +335,8 @@ const councilData = {
       position: 'Chairperson',
       appointment: 'April 2023',
       tenure: '3 Years',
-      background: 'Finance'
+      background: 'Finance',
+      image: '/images/team/placeholder-user.jpg'
     },
     members: [
       {
@@ -364,7 +380,8 @@ const councilData = {
       position: 'Chairperson',
       appointment: 'May 2023',
       tenure: '3 Years',
-      background: 'Fisheries Management'
+      background: 'Fisheries Management',
+      image: '/images/team/placeholder-user.jpg'
     },
     members: [
       {
@@ -408,7 +425,8 @@ const councilData = {
       position: 'Chairperson',
       appointment: 'July 2023',
       tenure: '3 Years',
-      background: 'Gender Equality'
+      background: 'Gender Equality',
+      image: '/images/team/placeholder-user.jpg'
     },
     members: [
       {
@@ -452,7 +470,8 @@ const councilData = {
       position: 'Chairperson',
       appointment: 'September 2023',
       tenure: '3 Years',
-      background: 'Home Affairs'
+      background: 'Home Affairs',
+      image: '/images/team/placeholder-user.jpg'
     },
     members: [
       {
@@ -496,7 +515,8 @@ const councilData = {
       position: 'Chairperson',
       appointment: 'October 2023',
       tenure: '3 Years',
-      background: 'Housing and Lands'
+      background: 'Housing and Lands',
+      image: '/images/team/placeholder-user.jpg'
     },
     members: [
       {
@@ -540,7 +560,8 @@ const councilData = {
       position: 'Chairperson',
       appointment: 'November 2023',
       tenure: '3 Years',
-      background: 'Local Government'
+      background: 'Local Government',
+      image: '/images/team/placeholder-user.jpg'
     },
     members: [
       {
@@ -584,7 +605,8 @@ const councilData = {
       position: 'Chairperson',
       appointment: 'November 2023',
       tenure: '3 Years',
-      background: 'Public Infrastructure'
+      background: 'Public Infrastructure',
+      image: '/images/team/placeholder-user.jpg'
     },
     members: [
       {
@@ -628,7 +650,8 @@ const councilData = {
       position: 'Chairperson',
       appointment: 'November 2023',
       tenure: '3 Years',
-      background: 'Public Utilities'
+      background: 'Public Utilities',
+      image: '/images/team/placeholder-user.jpg'
     },
     members: [
       {
@@ -672,7 +695,8 @@ const councilData = {
       position: 'Chairperson',
       appointment: 'November 2023',
       tenure: '3 Years',
-      background: 'Social Security'
+      background: 'Social Security',
+      image: '/images/team/placeholder-user.jpg'
     },
     members: [
       {
@@ -716,7 +740,8 @@ const councilData = {
       position: 'Chairperson',
       appointment: 'November 2023',
       tenure: '3 Years',
-      background: 'Tourism'
+      background: 'Tourism',
+      image: '/images/team/placeholder-user.jpg'
     },
     members: [
       {

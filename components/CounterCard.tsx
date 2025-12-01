@@ -44,7 +44,6 @@ const CounterCard: React.FC<CounterCardProps> = ({
     <div
       className={`counter-card ${style}`}
       ref={counterRef}
-      data-aos="fade-up"
     >
       <div className="counter-icon">
         <i className={icon} style={{ fontSize: '24px' }}></i>

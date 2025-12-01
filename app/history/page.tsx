@@ -3,7 +3,9 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { drmdHistory } from '@/lib/data';
 
+// Source: https://www.drmd.sc/about-us/
 export default function HistoryPage() {
   return (
     <div className="page-wrapper">
@@ -13,7 +15,7 @@ export default function HistoryPage() {
           <div className="row align-items-center">
             <div className="col-lg-8">
               <h1 className="display-4 fw-bold">Our History</h1>
-              <p className="lead">The evolution of disaster management in our country</p>
+              <p className="lead">The evolution of disaster risk management in Seychelles</p>
               <nav aria-label="breadcrumb">
                 <ol className="breadcrumb mb-0">
                   <li className="breadcrumb-item"><Link href="/" className="text-white">Home</Link></li>
@@ -26,37 +28,37 @@ export default function HistoryPage() {
         </div>
       </div>
 
-      {/* History Timeline */}
+      {/* History Timeline - Source: https://www.drmd.sc/about-us/ */}
       <section className="py-5">
         <div className="container">
           <div className="row justify-content-center mb-5">
             <div className="col-lg-8 text-center">
               <h2 className="mb-4">Our Journey Through Time</h2>
-              <p className="lead">The Disaster Risk Management Council has evolved over the years to better serve the nation during times of crisis.</p>
+              <p className="lead">Despite having being lawfully established in 2014 by enactment of the Disaster Risk Management Act, disaster risk management as a government pre-occupation started decades prior.</p>
             </div>
           </div>
 
           <div className="timeline position-relative">
-            {/* Timeline Item 1 */}
+            {/* Timeline Item 1 - 1995 */}
             <div className="row timeline-item mb-5">
               <div className="col-lg-6 order-lg-1 order-2">
                 <div className="card border-0 shadow-sm h-100">
                   <div className="card-body p-4">
-                    <h3 className="h4 mb-3">Establishment of the National Disaster Coordinating Council</h3>
-                    <p>The National Disaster Coordinating Council (NDCC) was established as the highest policy-making body for disaster management in the country.</p>
-                    <p>It was tasked with coordinating the activities of various government agencies and private organizations to ensure maximum utilization of resources during disasters.</p>
+                    <h3 className="h4 mb-3">National Disaster Committee (NDC)</h3>
+                    <p>A National Disaster Committee (NDC) was created and its mandate was to study the different natural disasters which may strike the islands of Seychelles.</p>
+                    <p>Its prime objectives were prevention and preparation of National Disaster Response Plan (NDPR).</p>
                   </div>
                 </div>
               </div>
               <div className="col-lg-6 order-lg-2 order-1 mb-4 mb-lg-0 d-flex align-items-center">
                 <div className="timeline-date bg-primary text-white p-3 rounded text-center">
-                  <h4 className="mb-0">1978</h4>
+                  <h4 className="mb-0">1995</h4>
                 </div>
                 <div className="timeline-image ms-4">
-                  <Image 
-                    src="/placeholder.svg" 
-                    alt="NDCC Establishment" 
-                    width={400} 
+                  <Image
+                    src="/placeholder.svg"
+                    alt="National Disaster Committee"
+                    width={400}
                     height={250}
                     className="img-fluid rounded shadow"
                   />
@@ -64,53 +66,53 @@ export default function HistoryPage() {
               </div>
             </div>
 
-            {/* Timeline Item 2 */}
+            {/* Timeline Item 2 - 2004 */}
             <div className="row timeline-item mb-5">
               <div className="col-lg-6 order-lg-2">
                 <div className="card border-0 shadow-sm h-100">
                   <div className="card-body p-4">
-                    <h3 className="h4 mb-3">Implementation of the Calamity Fund</h3>
-                    <p>The government established the Calamity Fund to provide financial resources for relief, rehabilitation, reconstruction, and other services in areas affected by disasters.</p>
-                    <p>This fund was crucial in ensuring that resources were available for immediate response to disasters.</p>
+                    <h3 className="h4 mb-3">National Disaster Secretariat</h3>
+                    <p>In October 2004 the National Disaster Secretariat for the NDC was established.</p>
+                    <p>Two months later on 26th December 2004 a tsunami that was triggered by an earthquake with the epicentre off the west coast of Sumatra, Indonesia, impacted Seychelles.</p>
                   </div>
                 </div>
               </div>
               <div className="col-lg-6 order-lg-1 mb-4 mb-lg-0 d-flex align-items-center justify-content-end">
                 <div className="timeline-image me-4">
-                  <Image 
-                    src="/placeholder.svg" 
-                    alt="Calamity Fund" 
-                    width={400} 
+                  <Image
+                    src="/placeholder.svg"
+                    alt="National Disaster Secretariat"
+                    width={400}
                     height={250}
                     className="img-fluid rounded shadow"
                   />
                 </div>
                 <div className="timeline-date bg-primary text-white p-3 rounded text-center">
-                  <h4 className="mb-0">1990</h4>
+                  <h4 className="mb-0">2004</h4>
                 </div>
               </div>
             </div>
 
-            {/* Timeline Item 3 */}
+            {/* Timeline Item 3 - 2006 */}
             <div className="row timeline-item mb-5">
               <div className="col-lg-6 order-lg-1 order-2">
                 <div className="card border-0 shadow-sm h-100">
                   <div className="card-body p-4">
-                    <h3 className="h4 mb-3">Adoption of the Hyogo Framework for Action</h3>
-                    <p>Seychelles adopted the Hyogo Framework for Action (HFA), a global blueprint for disaster risk reduction efforts.</p>
-                    <p>This framework guided the country's disaster risk reduction efforts and helped in building the resilience of communities to disasters.</p>
+                    <h3 className="h4 mb-3">Department of Risk and Disaster Management</h3>
+                    <p>The Department of Risk and Disaster Management was established under the Vice President&apos;s Office.</p>
+                    <p>This marked a significant step in formalizing disaster risk management within the government structure.</p>
                   </div>
                 </div>
               </div>
               <div className="col-lg-6 order-lg-2 order-1 mb-4 mb-lg-0 d-flex align-items-center">
                 <div className="timeline-date bg-primary text-white p-3 rounded text-center">
-                  <h4 className="mb-0">2005</h4>
+                  <h4 className="mb-0">2006</h4>
                 </div>
                 <div className="timeline-image ms-4">
-                  <Image 
-                    src="/placeholder.svg" 
-                    alt="Hyogo Framework" 
-                    width={400} 
+                  <Image
+                    src="/placeholder.svg"
+                    alt="Department of Risk and Disaster Management"
+                    width={400}
                     height={250}
                     className="img-fluid rounded shadow"
                   />
@@ -118,23 +120,22 @@ export default function HistoryPage() {
               </div>
             </div>
 
-            {/* Timeline Item 4 */}
+            {/* Timeline Item 4 - 2010 */}
             <div className="row timeline-item mb-5">
               <div className="col-lg-6 order-lg-2">
                 <div className="card border-0 shadow-sm h-100">
                   <div className="card-body p-4">
-                    <h3 className="h4 mb-3">Enactment of the Disaster Risk Reduction and Management Act</h3>
-                    <p>The Philippine Disaster Risk Reduction and Management Act of 2010 (Republic Act 10121) was enacted, which transformed the NDCC into the Disaster Risk Management Council (DRMD).</p>
-                    <p>This law institutionalized a comprehensive, all-hazard, multi-sectoral, inter-agency, and community-based approach to disaster risk reduction and management.</p>
+                    <h3 className="h4 mb-3">Division Split</h3>
+                    <p>The organisation was split into 2 divisions; i.e.; the Disaster and Risk Management and the Operation, Education and Communication divisions with two directors general at the helm of each.</p>
                   </div>
                 </div>
               </div>
               <div className="col-lg-6 order-lg-1 mb-4 mb-lg-0 d-flex align-items-center justify-content-end">
                 <div className="timeline-image me-4">
-                  <Image 
-                    src="/placeholder.svg" 
-                    alt="DRRM Act" 
-                    width={400} 
+                  <Image
+                    src="/placeholder.svg"
+                    alt="Division Split"
+                    width={400}
                     height={250}
                     className="img-fluid rounded shadow"
                   />
@@ -145,29 +146,56 @@ export default function HistoryPage() {
               </div>
             </div>
 
-            {/* Timeline Item 5 */}
-            <div className="row timeline-item">
+            {/* Timeline Item 5 - 2012 */}
+            <div className="row timeline-item mb-5">
               <div className="col-lg-6 order-lg-1 order-2">
                 <div className="card border-0 shadow-sm h-100">
                   <div className="card-body p-4">
-                    <h3 className="h4 mb-3">Present Day DRMD</h3>
-                    <p>Today, the DRMD continues to lead the nation's disaster risk reduction and management efforts, focusing on building resilient communities and ensuring the safety of all citizens.</p>
-                    <p>The council has expanded its capabilities and resources to better respond to the increasing frequency and intensity of disasters due to climate change.</p>
+                    <h3 className="h4 mb-3">Divisions Merged</h3>
+                    <p>The two divisions were merged into one with one director general as the head.</p>
+                    <p>This consolidation improved coordination and efficiency in disaster risk management operations.</p>
                   </div>
                 </div>
               </div>
               <div className="col-lg-6 order-lg-2 order-1 mb-4 mb-lg-0 d-flex align-items-center">
                 <div className="timeline-date bg-primary text-white p-3 rounded text-center">
-                  <h4 className="mb-0">Present</h4>
+                  <h4 className="mb-0">2012</h4>
                 </div>
                 <div className="timeline-image ms-4">
-                  <Image 
-                    src="/placeholder.svg" 
-                    alt="Present Day DRMD" 
-                    width={400} 
+                  <Image
+                    src="/placeholder.svg"
+                    alt="Divisions Merged"
+                    width={400}
                     height={250}
                     className="img-fluid rounded shadow"
                   />
+                </div>
+              </div>
+            </div>
+
+            {/* Timeline Item 6 - 2014 */}
+            <div className="row timeline-item">
+              <div className="col-lg-6 order-lg-2">
+                <div className="card border-0 shadow-sm h-100">
+                  <div className="card-body p-4">
+                    <h3 className="h4 mb-3">Disaster Risk Management Act</h3>
+                    <p>In August 2014, the Disaster Risk Management Act was assented and established the Disaster Risk Management Division as a division within the government of Seychelles.</p>
+                    <p>The Division was established for effective management of disaster through a comprehensive and integrated all hazard approach and for matters connected therewith or incidents thereto.</p>
+                  </div>
+                </div>
+              </div>
+              <div className="col-lg-6 order-lg-1 mb-4 mb-lg-0 d-flex align-items-center justify-content-end">
+                <div className="timeline-image me-4">
+                  <Image
+                    src="/placeholder.svg"
+                    alt="Disaster Risk Management Act 2014"
+                    width={400}
+                    height={250}
+                    className="img-fluid rounded shadow"
+                  />
+                </div>
+                <div className="timeline-date bg-primary text-white p-3 rounded text-center">
+                  <h4 className="mb-0">2014</h4>
                 </div>
               </div>
             </div>
@@ -175,11 +203,11 @@ export default function HistoryPage() {
         </div>
       </section>
 
-      {/* Key Milestones */}
+      {/* Key Milestones - Source: https://www.drmd.sc/about-us/ */}
       <section className="py-5 bg-light">
         <div className="container">
           <h2 className="text-center mb-5">Key Milestones</h2>
-          
+
           <div className="row g-4">
             <div className="col-md-6 col-lg-4">
               <div className="card h-100 border-0 shadow-sm">
@@ -188,10 +216,10 @@ export default function HistoryPage() {
                     <div className="me-3">
                       <i className="flaticon-calendar text-primary" style={{ fontSize: '36px' }}></i>
                     </div>
-                    <h3 className="h5 mb-0">2013</h3>
+                    <h3 className="h5 mb-0">1995</h3>
                   </div>
-                  <h4 className="h6 mb-3">Response to Typhoon Haiyan (Yolanda)</h4>
-                  <p>Led the largest disaster response operation in the country's history following Typhoon Haiyan, which affected over 14 million people.</p>
+                  <h4 className="h6 mb-3">National Disaster Committee Created</h4>
+                  <p>A National Disaster Committee (NDC) was created with the mandate to study the different natural disasters which may strike the islands of Seychelles.</p>
                 </div>
               </div>
             </div>
@@ -202,10 +230,10 @@ export default function HistoryPage() {
                     <div className="me-3">
                       <i className="flaticon-calendar text-primary" style={{ fontSize: '36px' }}></i>
                     </div>
-                    <h3 className="h5 mb-0">2015</h3>
+                    <h3 className="h5 mb-0">2004</h3>
                   </div>
-                  <h4 className="h6 mb-3">Adoption of the Sendai Framework</h4>
-                  <p>Adopted the Sendai Framework for Disaster Risk Reduction, which guides the country's disaster risk reduction efforts until 2030.</p>
+                  <h4 className="h6 mb-3">2004 Indian Ocean Tsunami</h4>
+                  <p>On 26th December 2004 a tsunami that was triggered by an earthquake with the epicentre off the west coast of Sumatra, Indonesia, impacted Seychelles.</p>
                 </div>
               </div>
             </div>
@@ -216,10 +244,10 @@ export default function HistoryPage() {
                     <div className="me-3">
                       <i className="flaticon-calendar text-primary" style={{ fontSize: '36px' }}></i>
                     </div>
-                    <h3 className="h5 mb-0">2020</h3>
+                    <h3 className="h5 mb-0">2014</h3>
                   </div>
-                  <h4 className="h6 mb-3">COVID-19 Pandemic Response</h4>
-                  <p>Played a crucial role in the country's response to the COVID-19 pandemic, coordinating efforts to mitigate its impact.</p>
+                  <h4 className="h6 mb-3">Disaster Risk Management Act</h4>
+                  <p>In August 2014, the Disaster Risk Management Act was assented and established the Disaster Risk Management Division within the government of Seychelles.</p>
                 </div>
               </div>
             </div>

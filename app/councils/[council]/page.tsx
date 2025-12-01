@@ -486,7 +486,7 @@ const CouncilDetails: React.FC = () => {
                       <div className="section-title style3 mb-30">
                         <div className="row align-items-center">
                           <div className="col-lg-7 col-md-6">
-                            <span>Council Profile</span>
+                            <span>Department Profile</span>
                           </div>
                           <div className="col-lg-5 col-md-6">
                             <div className="council-dropdown-wrapper text-md-end mb-30">
@@ -531,15 +531,20 @@ const CouncilDetails: React.FC = () => {
                     </div>
                     <div className="col-lg-4">
                       <div className="card h-100 bg-white p-3 shadow-sm">
-                        <h5 className="card-title p-2 border-bottom">Council Leadership</h5>
+                        <h5 className="card-title p-2 border-bottom">Department leadership</h5>
                         <div className="text-center mb-3">
-                          <img src="/img/raj.png" alt="Council Chair" className="rounded-circle mb-3" width={150} />
+                          <img
+                            src={councilState.councilData.leadership.image}
+                            alt={councilState.councilData.leadership.name}
+                            className="rounded-circle mb-3"
+                            width={150}
+                            height={150}
+                            style={{ objectFit: 'cover' }}
+                          />
                           <h6>{councilState.councilData.leadership.name}</h6>
                           <p className="text-muted">{councilState.councilData.leadership.position}</p>
                         </div>
                         <ul className="list-unstyled">
-                          <li className="mb-2"><strong>Appointment:</strong> {councilState.councilData.leadership.appointment}</li>
-                          <li className="mb-2"><strong>Tenure:</strong> {councilState.councilData.leadership.tenure}</li>
                           <li><strong>Background:</strong> {councilState.councilData.leadership.background}</li>
                         </ul>
                       </div>
