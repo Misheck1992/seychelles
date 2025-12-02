@@ -50,15 +50,15 @@ const DocumentSection: React.FC = () => {
     },
     {
       id: 3,
-      title: "Flood Evacuation Routes - Port Louis",
-      description: "Detailed maps and instructions for evacuation during flooding events in Port Louis district.",
+      title: "Flood Evacuation Routes - Victoria",
+      description: "Detailed maps and instructions for evacuation during flooding events in Greater Victoria districts.",
       type: "PDF",
       size: "4.5 MB",
       date: "Feb 28, 2023",
       category: "DISTRICT",
       color: "#4285F4",
       icon: "pdf-icon.svg",
-      district: "Port Louis"
+      district: "Bel Air"
     },
     {
       id: 4,

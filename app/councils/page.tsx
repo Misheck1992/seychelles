@@ -41,7 +41,7 @@ export default function CouncilsPage() {
               <div className="section-title style3 mb-30">
                 <div className="row align-items-center">
                   <div className="col-lg-7 col-md-6">
-                    <span>Agriculture Department Profile</span>
+                    <span>Agriculture Ministry Profile</span>
                   </div>
                   <div className="col-lg-5 col-md-6">
                     <div className="ministry-dropdown-wrapper text-md-end mb-30">
@@ -124,7 +124,7 @@ export default function CouncilsPage() {
                 <h5 className="card-title p-2 border-bottom">Division
                   Leadership</h5>
                 <div className="text-center mb-3">
-                  <img src="/img/placeholder.jpg" alt="Director General" className="rounded-circle mb-3" width={150} />
+                  <img src="/images/team/placeholder-user.jpg" alt="Director General" className="rounded-circle mb-3" width={150} height={150} />
                   <h6>Robert Ernesta</h6>
                   <p className="text-muted">Director General,
                     DRMD</p>
@@ -631,7 +631,7 @@ export default function CouncilsPage() {
                               <tr>
                                 <td>
                                   <div className="d-flex align-items-center">
-                                    <img src="/img/placeholder.jpg" alt="Profile" className="rounded-circle me-2" width={40} />
+                                    <img src="/images/team/placeholder-user.jpg" alt="Profile" className="rounded-circle me-2" width={40} height={40} />
                                     <div>Robert Ernesta</div>
                                   </div>
                                 </td>
@@ -645,7 +645,7 @@ export default function CouncilsPage() {
                               <tr>
                                 <td>
                                   <div className="d-flex align-items-center">
-                                    <img src="/img/placeholder.jpg" alt="Profile" className="rounded-circle me-2" width={40} />
+                                    <img src="/images/team/placeholder-user.jpg" alt="Profile" className="rounded-circle me-2" width={40} height={40} />
                                     <div>Daniel Cetoupe</div>
                                   </div>
                                 </td>
@@ -659,7 +659,7 @@ export default function CouncilsPage() {
                               <tr>
                                 <td>
                                   <div className="d-flex align-items-center">
-                                    <img src="/img/placeholder.jpg" alt="Profile" className="rounded-circle me-2" width={40} />
+                                    <img src="/images/team/placeholder-user.jpg" alt="Profile" className="rounded-circle me-2" width={40} height={40} />
                                     <div>Cliff Alissop</div>
                                   </div>
                                 </td>
@@ -673,7 +673,7 @@ export default function CouncilsPage() {
                               <tr>
                                 <td>
                                   <div className="d-flex align-items-center">
-                                    <img src="/img/placeholder.jpg" alt="Profile" className="rounded-circle me-2" width={40} />
+                                    <img src="/images/team/placeholder-user.jpg" alt="Profile" className="rounded-circle me-2" width={40} height={40} />
                                     <div>Doreen Bastienne</div>
                                   </div>
                                 </td>

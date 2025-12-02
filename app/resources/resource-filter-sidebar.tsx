@@ -119,11 +119,11 @@ const ResourceFilterSidebar: React.FC<ResourceFilterSidebarProps> = ({
         </div>
       </div>
 
-      {/* Council Filter */}
+      {/* Ministry/Division Filter */}
       <div className="filter-section mb-3">
         <div className="filter-header" data-bs-toggle="collapse" data-bs-target="#councilFilters" aria-expanded="false">
           <h6 className="d-flex justify-content-between align-items-center mb-0">
-            Councils
+            Ministries
             <i className="ri-arrow-down-s-line"></i>
           </h6>
         </div>
@@ -138,7 +138,7 @@ const ResourceFilterSidebar: React.FC<ResourceFilterSidebarProps> = ({
                 onChange={() => onCouncilFilterChange('all')}
               />
               <label className="form-check-label" htmlFor="council-all">
-                All Councils
+                All Ministries
               </label>
             </div>
             <div className="form-check mb-2">

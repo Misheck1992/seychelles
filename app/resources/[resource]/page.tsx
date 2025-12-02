@@ -286,7 +286,7 @@ const ResourceDetails: React.FC = () => {
             <div className="col-lg-9 col-md-8">
                {/* Resource Overview */}
           <div className="row mb-5">
-            <div className="col-lg-8">
+            <div className="col-lg-12">
               <div className="section-title style3 mb-30">
                 <div className="row align-items-center">
                   <div className="col-lg-7 col-md-6">
@@ -330,18 +330,6 @@ const ResourceDetails: React.FC = () => {
                 </div>
               </div>
             </div>
-            <div className="col-lg-4">
-              <div className="card h-100 bg-white p-3 shadow-sm">
-                <h5 className="card-title p-2 border-bottom">{currentResourceData.name}</h5>
-                <div className="resource-image">
-                  <img
-                    src={currentResourceData.featuredImage || "/img/resources/placeholder.jpg"}
-                    alt={currentResourceData.name}
-                    className="img-fluid rounded"
-                  />
-                </div>
-              </div>
-            </div>
           </div>
 
           {/* Search Bar */}
@@ -367,11 +355,6 @@ const ResourceDetails: React.FC = () => {
               <div className="resource-items">
                 <div className="d-flex justify-content-between align-items-center mb-4">
                   <h4 className="mb-0">Available {currentResourceData.name}</h4>
-                  <div className="resource-count">
-                    <span className="badge bg-light text-dark">
-                      {filteredResourceItems.length} items found
-                    </span>
-                  </div>
                 </div>
 
                 {filteredResourceItems.length > 0 ? (

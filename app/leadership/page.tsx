@@ -64,17 +64,17 @@ export default function LeadershipPage() {
           </div>
 
           {/* Additional Leadership */}
-          <h2 className="text-center mb-5 mt-5">Department Heads</h2>
-          
+          <h2 className="text-center mb-5 mt-5">Division Heads</h2>
+
           <div className="row g-4">
             <div className="col-md-6 col-lg-3">
               <div className="card h-100 border-0 shadow-sm">
                 <div className="card-body text-center p-4">
                   <div className="mb-3 position-relative mx-auto" style={{ width: '100px', height: '100px' }}>
-                    <Image 
-                      src="/placeholder.svg" 
-                      alt="Department Head" 
-                      width={100} 
+                    <Image
+                      src="/placeholder.svg"
+                      alt="Division Head"
+                      width={100}
                       height={100}
                       className="rounded-circle img-thumbnail"
                       style={{ objectFit: 'cover' }}
@@ -89,10 +89,10 @@ export default function LeadershipPage() {
               <div className="card h-100 border-0 shadow-sm">
                 <div className="card-body text-center p-4">
                   <div className="mb-3 position-relative mx-auto" style={{ width: '100px', height: '100px' }}>
-                    <Image 
-                      src="/placeholder.svg" 
-                      alt="Department Head" 
-                      width={100} 
+                    <Image
+                      src="/placeholder.svg"
+                      alt="Division Head"
+                      width={100}
                       height={100}
                       className="rounded-circle img-thumbnail"
                       style={{ objectFit: 'cover' }}
@@ -107,10 +107,10 @@ export default function LeadershipPage() {
               <div className="card h-100 border-0 shadow-sm">
                 <div className="card-body text-center p-4">
                   <div className="mb-3 position-relative mx-auto" style={{ width: '100px', height: '100px' }}>
-                    <Image 
-                      src="/placeholder.svg" 
-                      alt="Department Head" 
-                      width={100} 
+                    <Image
+                      src="/placeholder.svg"
+                      alt="Division Head"
+                      width={100}
                       height={100}
                       className="rounded-circle img-thumbnail"
                       style={{ objectFit: 'cover' }}
@@ -125,10 +125,10 @@ export default function LeadershipPage() {
               <div className="card h-100 border-0 shadow-sm">
                 <div className="card-body text-center p-4">
                   <div className="mb-3 position-relative mx-auto" style={{ width: '100px', height: '100px' }}>
-                    <Image 
-                      src="/placeholder.svg" 
-                      alt="Department Head" 
-                      width={100} 
+                    <Image
+                      src="/placeholder.svg"
+                      alt="Division Head"
+                      width={100}
                       height={100}
                       className="rounded-circle img-thumbnail"
                       style={{ objectFit: 'cover' }}

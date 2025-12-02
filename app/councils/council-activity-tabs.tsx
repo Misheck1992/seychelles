@@ -545,7 +545,7 @@ export function CouncilActivityTabs({
             <div className="col-lg-4">
               <div className="card border-0 shadow-sm h-100">
                 <div className="card-header" style={{ backgroundColor: 'rgba(51, 143, 122, 0.1)' }}>
-                  <h5 className="mb-0">Council Composition</h5>
+                  <h5 className="mb-0">Ministry/Division Composition</h5>
                 </div>
                 {/* Source: https://www.drmd.sc/meet-the-team/ */}
                 <div className="card-body">
@@ -564,7 +564,7 @@ export function CouncilActivityTabs({
             <div className="col-lg-8">
               <div className="card border-0 shadow-sm mb-4">
                 <div className="card-header" style={{ backgroundColor: 'rgba(51, 143, 122, 0.1)' }}>
-                  <h5 className="mb-0">Key Council Members</h5>
+                  <h5 className="mb-0">Key  Members</h5>
                 </div>
                 <div className="card-body p-0">
                   <div className="table-responsive">
@@ -582,7 +582,7 @@ export function CouncilActivityTabs({
                         <tr>
                           <td>
                             <div className="d-flex align-items-center">
-                              <img src="/img/placeholder.jpg" alt="Profile" className="rounded-circle me-2" width={40} />
+                              <img src="/images/team/placeholder-user.jpg" alt="Profile" className="rounded-circle me-2" width={40} height={40} />
                               <div>Robert Ernesta</div>
                             </div>
                           </td>
@@ -596,7 +596,7 @@ export function CouncilActivityTabs({
                         <tr>
                           <td>
                             <div className="d-flex align-items-center">
-                              <img src="/img/placeholder.jpg" alt="Profile" className="rounded-circle me-2" width={40} />
+                              <img src="/images/team/placeholder-user.jpg" alt="Profile" className="rounded-circle me-2" width={40} height={40} />
                               <div>Daniel Cetoupe</div>
                             </div>
                           </td>
@@ -610,7 +610,7 @@ export function CouncilActivityTabs({
                         <tr>
                           <td>
                             <div className="d-flex align-items-center">
-                              <img src="/img/placeholder.jpg" alt="Profile" className="rounded-circle me-2" width={40} />
+                              <img src="/images/team/placeholder-user.jpg" alt="Profile" className="rounded-circle me-2" width={40} height={40} />
                               <div>Cliff Alissop</div>
                             </div>
                           </td>

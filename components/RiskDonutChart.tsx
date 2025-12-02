@@ -31,7 +31,9 @@ const RiskDonutChart: React.FC<RiskDonutChartProps> = ({
   highRiskAreas
 }) => {
   const chartRef = useRef<HTMLDivElement>(null);
-  const chartId = `risk-chart-${districtName.toLowerCase().replace(/\s+/g, '-')}`;
+  // Sanitize the district name to create a valid CSS selector ID
+  // Remove all special characters and replace spaces with hyphens
+  const chartId = `risk-chart-${districtName.toLowerCase().replace(/[^a-z0-9\s]/g, '').replace(/\s+/g, '-')}`;
 
   useEffect(() => {
     if (!chartRef.current) return;

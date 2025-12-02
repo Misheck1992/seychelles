@@ -6,7 +6,7 @@ export default function Scripts() {
   useEffect(() => {
     // Load scripts dynamically
     const loadScript = (src: string): Promise<void> => {
-      return new Promise((resolve) => {
+      return new Promise((resolve, reject) => {
         // Check if script already exists
         const existingScript = document.querySelector(`script[src="${src}"]`);
         if (existingScript) {
@@ -18,8 +18,14 @@ export default function Scripts() {
         script.src = src;
         script.async = true;
 
-        script.onload = () => resolve();
-        script.onerror = () => resolve(); // Resolve even on error to not block other scripts
+        script.onload = () => {
+          console.log(`✅ Loaded: ${src}`);
+          resolve();
+        };
+        script.onerror = (error) => {
+          console.warn(`⚠️ Failed to load: ${src}`, error);
+          resolve(); // Resolve even on error to not block other scripts
+        };
 
         document.body.appendChild(script);
       });
@@ -42,15 +48,16 @@ export default function Scripts() {
         // Load these in parallel
         await Promise.all(parallelScripts.map(src => loadScript(src)));
 
-        // Load jQuery-dependent scripts in parallel
+        // Load Owl Carousel FIRST (required by owl-thumb plugin)
+        await loadScript('/js/owl.carousel.min.js');
+
+        // Load jQuery-dependent scripts in parallel (after Owl Carousel is loaded)
+        // Note: form-validator and contact-form-script are excluded as we use React for form handling
         const jqueryDependentScripts = [
-          '/js/owl.carousel.min.js',
-          '/js/owl-thumb.min.js',
+          '/js/owl-thumb.min.js',  // Must load AFTER owl.carousel.min.js
           '/js/circle-progressbar.min.js',
           '/js/fancybox.min.js',
           '/js/jquery.appear.js',
-          '/js/form-validator.min.js',
-          '/js/contact-form-script.js',
         ];
 
         await Promise.all(jqueryDependentScripts.map(src => loadScript(src)));

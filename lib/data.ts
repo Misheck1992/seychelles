@@ -10,36 +10,33 @@ export const navigationLinks = [
     ]
   },
   {
-    name: "Councils",
+    name: "Ministries",
     href: "#",
     dropdown: true,
     megaMenu: true,
     columns: [
       [
-        { name: "Agriculture", href: "/council" },
-        { name: "Civil Service", href: "/council" },
-        { name: "Education", href: "/council" },
-        { name: "External Affairs", href: "/council" },
-        { name: "Disaster Management", href: "/council" }
+        { name: "Finance, Economic Planning & Trade", href: "/council" },
+        { name: "Health", href: "/council" },
+        { name: "Employment & Human Resource Planning", href: "/council" },
+        { name: "Homeland Security & Civil Affairs", href: "/council" }
       ],
       [
-        { name: "External Communications", href: "/council" },
-        { name: "Finance", href: "/council" },
-        { name: "Fisheries", href: "/council" },
-        { name: "Gender Equality", href: "/council" },
-        { name: "Health", href: "/council" }
+        { name: "Education & Human Resource Development", href: "/council" },
+        { name: "Transport, Port & Civil Aviation", href: "/council" },
+        { name: "Local Government & Inner Islands", href: "/council" },
+        { name: "Youth & Sports", href: "/council" }
       ],
       [
-        { name: "Home Affairs", href: "/council" },
-        { name: "Housing and Lands", href: "/council" },
-        { name: "Local Government", href: "/council" },
-        { name: "Oceanography", href: "/council" }
+        { name: "Fisheries & Blue Economy", href: "/council" },
+        { name: "Foreign Affairs & Diaspora", href: "/council" },
+        { name: "Social Affairs, Family & Equality", href: "/council" },
+        { name: "Environment, Climate, Energy & Natural Resources", href: "/council" }
       ],
       [
-        { name: "Public Infrastructure", href: "/council" },
-        { name: "Public Utilities", href: "/council" },
-        { name: "Social Security", href: "/council" },
-        { name: "Tourism", href: "/council" }
+        { name: "Industry & Enterprise", href: "/council" },
+        { name: "Tourism & Culture", href: "/council" },
+        { name: "Vice President's Office", href: "/council" }
       ]
     ]
   },
@@ -50,22 +47,46 @@ export const navigationLinks = [
     megaMenu: true,
     columns: [
       [
-        { name: "Victoria", href: "/district" },
-        { name: "Beau Vallon", href: "/district" },
-        { name: "Anse aux Pins", href: "/district" },
-        { name: "Anse Royale", href: "/district" }
+        // Greater Victoria Districts (8 districts)
+        { name: "Bel Air", href: "/districts/bel-air" },
+        { name: "English River", href: "/districts/english-river" },
+        { name: "Les Mamelles", href: "/districts/les-mamelles" },
+        { name: "Mont Buxton", href: "/districts/mont-buxton" },
+        { name: "Mont Fleuri", href: "/districts/mont-fleuri" },
+        { name: "Plaisance", href: "/districts/plaisance" },
+        { name: "Roche Caïman", href: "/districts/roche-caiman" },
+        { name: "Saint Louis", href: "/districts/saint-louis" }
       ],
       [
-        { name: "Cascade", href: "/district" },
-        { name: "Glacis", href: "/district" },
-        { name: "Mont Fleuri", href: "/district" },
-        { name: "Plaisance", href: "/district" }
+        // East Mahé Districts
+        { name: "Anse aux Pins", href: "/districts/anse-aux-pins" },
+        { name: "Au Cap", href: "/districts/au-cap" },
+        { name: "Cascade", href: "/districts/cascade" },
+        { name: "Pointe La Rue", href: "/districts/pointe-larue" },
+        // North Mahé Districts
+        { name: "Anse Etoile", href: "/districts/anse-etoile" },
+        { name: "Beau Vallon", href: "/districts/beau-vallon" },
+        { name: "Glacis", href: "/districts/glacis" }
       ],
       [
-        { name: "Praslin", href: "/district" },
-        { name: "La Digue", href: "/district" },
-        { name: "Outer Islands", href: "/district" },
-        { name: "Takamaka", href: "/district" }
+        // West Mahé Districts
+        { name: "Anse Boileau", href: "/districts/anse-boileau" },
+        { name: "Bel Ombre", href: "/districts/bel-ombre" },
+        { name: "Grand'Anse Mahé", href: "/districts/grand-anse-mahe" },
+        { name: "Port Glaud", href: "/districts/port-glaud" },
+        // South Mahé Districts
+        { name: "Anse Royale", href: "/districts/anse-royale" },
+        { name: "Baie Lazare", href: "/districts/baie-lazare" },
+        { name: "Takamaka", href: "/districts/takamaka" }
+      ],
+      [
+        // Praslin Districts
+        { name: "Baie Sainte Anne", href: "/districts/baie-sainte-anne" },
+        { name: "Grand'Anse Praslin", href: "/districts/grand-anse-praslin" },
+        // La Digue
+        { name: "La Digue", href: "/districts/la-digue" },
+        // Outer Islands
+        { name: "Outer Islands", href: "/districts/outer-islands" }
       ]
     ]
   },
@@ -74,10 +95,10 @@ export const navigationLinks = [
     href: "#",
     dropdown: true,
     submenu: [
-      { name: "Rodrigues Island", href: "/district" },
-      { name: "Agaléga Islands", href: "/district" },
-      { name: "Saint Brandon", href: "/district" },
-      { name: "Tromelin Island", href: "/district" }
+      { name: "Aldabra Atoll", href: "/district" },
+      { name: "Alphonse Group", href: "/district" },
+      { name: "Amirantes Group", href: "/district" },
+      { name: "Farquhar Group", href: "/district" }
     ]
   },
   {
@@ -181,44 +202,45 @@ export const dashboardStats = [
   {
     id: 1,
     title: "Current Alerts by Region",
-    image: "/placeholder.svg?height=150&width=250",
+    image: "https://images.unsplash.com/photo-1569336415962-a4bd9f69cd83?w=250&h=150&fit=crop",
     description: "Active alerts across different regions",
   },
   {
     id: 2,
     title: "Past Disasters by Category",
-    image: "/placeholder.svg?height=150&width=250",
+    image: "https://images.unsplash.com/photo-1527482797697-8795b05a13fe?w=250&h=150&fit=crop",
     description: "Historical disaster events by type",
   },
   {
     id: 3,
     title: "Resource Distribution Status",
-    image: "/placeholder.svg?height=150&width=250",
+    image: "https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=250&h=150&fit=crop",
     description: "Current resource allocation across affected areas",
   },
 ]
 
+// Source: https://www.drmd.sc/
 export const keyPersonnel = [
   {
     id: 1,
-    name: "Dr. John Smith",
+    name: "DRMD Leadership",
     title: "Director General",
-    image: "/placeholder.svg?height=100&width=100",
-    contact: "+230 1234 5678",
+    image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=100&h=100&fit=crop",
+    contact: "+248 4389898",
   },
   {
     id: 2,
-    name: "Eng. Mary Johnson",
+    name: "Operations Team",
     title: "Deputy Director for Operations",
-    image: "/placeholder.svg?height=100&width=100",
-    contact: "+230 1234 5679",
+    image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=100&h=100&fit=crop",
+    contact: "+248 4389898",
   },
   {
     id: 3,
-    name: "Dr. Robert Williams",
+    name: "DRR Team",
     title: "Chief, Disaster Risk Reduction",
-    image: "/placeholder.svg?height=100&width=100",
-    contact: "+230 1234 5680",
+    image: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=100&h=100&fit=crop",
+    contact: "+248 4389898",
   },
 ]
 
@@ -228,7 +250,7 @@ export const latestNews = [
     title: "DRMD Conducts Nationwide Disaster Preparedness Exercise",
     summary: "A nationwide disaster preparedness exercise was conducted to test emergency response capabilities",
     date: "April 20, 2023",
-    image: "/placeholder.svg?height=150&width=250",
+    image: "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?w=250&h=150&fit=crop",
     url: "/news/nationwide-preparedness-exercise",
   },
   {
@@ -236,7 +258,7 @@ export const latestNews = [
     title: "New Early Warning System Deployed",
     summary: "State-of-the-art early warning systems have been installed in coastal areas",
     date: "April 12, 2023",
-    image: "/placeholder.svg?height=150&width=250",
+    image: "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=250&h=150&fit=crop",
     url: "/news/early-warning-system",
   },
   {
@@ -244,7 +266,7 @@ export const latestNews = [
     title: "Community Resilience Program Launched",
     summary: "A new program aimed at building community resilience to disasters has been launched",
     date: "April 5, 2023",
-    image: "/placeholder.svg?height=150&width=250",
+    image: "https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=250&h=150&fit=crop",
     url: "/news/community-resilience-program",
   },
 ]
@@ -313,8 +335,8 @@ export const drmdHistory = [
   },
   {
     year: "2006",
-    title: "Department of Risk and Disaster Management",
-    description: "The Department of Risk and Disaster Management was established under the Vice President's Office."
+    title: "Division of Risk and Disaster Management",
+    description: "The Division of Risk and Disaster Management was established under the Vice President's Office."
   },
   {
     year: "2010",
@@ -369,7 +391,7 @@ export const services = [
     title: "Disaster Preparedness",
     description: "Equipping communities with the knowledge and tools to prepare for disasters.",
     icon: "ShieldCheck",
-    image: "/placeholder.svg?height=200&width=300",
+    image: "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=300&h=200&fit=crop",
     url: "/services/preparedness",
   },
   {
@@ -377,7 +399,7 @@ export const services = [
     title: "Emergency Response",
     description: "Providing immediate assistance and support during disasters.",
     icon: "Siren",
-    image: "/placeholder.svg?height=200&width=300",
+    image: "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?w=300&h=200&fit=crop",
     url: "/services/response",
   },
   {
@@ -385,7 +407,7 @@ export const services = [
     title: "Rehabilitation and Recovery",
     description: "Helping communities rebuild and recover after disasters.",
     icon: "Building",
-    image: "/placeholder.svg?height=200&width=300",
+    image: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=300&h=200&fit=crop",
     url: "/services/rehabilitation",
   },
   {
@@ -393,62 +415,64 @@ export const services = [
     title: "Risk Assessment",
     description: "Identifying and assessing disaster risks to inform prevention and mitigation efforts.",
     icon: "Shield",
-    image: "/placeholder.svg?height=200&width=300",
+    image: "https://images.unsplash.com/photo-1569336415962-a4bd9f69cd83?w=300&h=200&fit=crop",
     url: "/services/risk-assessment",
   },
 ]
 
+// Source: https://www.drmd.sc/
 export const newsUpdates = [
   {
     id: 1,
-    title: "DRMD Conducts Earthquake Drill in Metro Manila",
+    title: "World Tsunami Awareness Day 2025 Photo Competition",
     excerpt:
-      "The DRMD conducted a large-scale earthquake drill in Metro Manila to test the readiness of the public and government agencies.",
-    date: "May 15, 2023",
-    category: "Disaster Preparedness",
-    image: "/placeholder.svg?height=200&width=300",
-    url: "/news/earthquake-drill",
+      "As part of activities to commemorate World Tsunami Awareness Day 2025, the DRMD launched a 'Get To High Ground' photo competition encouraging public participation.",
+    date: "November 14, 2025",
+    category: "Awareness",
+    image: "https://images.unsplash.com/photo-1505142468610-359e7d316be0?w=300&h=200&fit=crop",
+    url: "/news/world-tsunami-awareness-day-2025",
   },
   {
     id: 2,
-    title: "Typhoon Season: DRMD Issues Advisory",
+    title: "IOWAVE2025 Tsunami Preparedness Exercise",
     excerpt:
-      "With the onset of the typhoon season, the DRMD has issued an advisory to all local government units to activate their disaster response plans.",
-    date: "May 10, 2023",
-    category: "Weather Advisory",
-    image: "/placeholder.svg?height=200&width=300",
-    url: "/news/typhoon-advisory",
+      "The National Emergency Operations Centre (NEOC) and national key stakeholders participated in the 15th edition of the regional Indian Ocean Wave Exercise.",
+    date: "November 7, 2025",
+    category: "Exercise",
+    image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=300&h=200&fit=crop",
+    url: "/news/iowave2025-exercise",
   },
   {
     id: 3,
-    title: "DRMD Partners with NGOs for Relief Operations",
+    title: "Youth Engagement in Disaster Risk Reduction",
     excerpt:
-      "The DRMD has partnered with several non-governmental organizations to provide relief assistance to communities affected by recent floods.",
-    date: "May 5, 2023",
-    category: "Relief Operations",
-    image: "/placeholder.svg?height=200&width=300",
-    url: "/news/relief-operations",
+      "DRMD partnered with the Seychelles Institute of Technology to engage future mechanical engineers in disaster risk reduction as part of IDDRR 2025.",
+    date: "October 22, 2025",
+    category: "Youth Engagement",
+    image: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=300&h=200&fit=crop",
+    url: "/news/youth-engagement-iddrr-2025",
   },
 ]
 
+// Source: https://www.drmd.sc/
 export const galleryImages = [
   {
     id: 1,
-    title: "Earthquake Drill",
-    description: "Participants during the earthquake drill in Quezon City.",
-    image: "/placeholder.svg?height=300&width=400",
+    title: "IOWAVE2025 Exercise",
+    description: "National Emergency Operations Centre participating in the Indian Ocean Wave Exercise.",
+    image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=400&h=300&fit=crop",
   },
   {
     id: 2,
-    title: "Flood Relief",
-    description: "Distribution of relief goods to flood victims in Cagayan Valley.",
-    image: "/placeholder.svg?height=300&width=400",
+    title: "Flood Response",
+    description: "DRMD response team during the December 2023 flooding in Bel Ombre and Beau Vallon.",
+    image: "https://images.unsplash.com/photo-1547683905-f686c993aae5?w=400&h=300&fit=crop",
   },
   {
     id: 3,
-    title: "Training Session",
-    description: "DRMD personnel conducting a training session on disaster response.",
-    image: "/placeholder.svg?height=300&width=400",
+    title: "Community Training",
+    description: "DRMD personnel conducting disaster preparedness training in Victoria.",
+    image: "https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=400&h=300&fit=crop",
   },
 ]
 
@@ -462,33 +486,34 @@ export const contactInfo = {
     "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3861.624944242483!2d121.0509717148379!3d14.60107878982494!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b008720e8efd%3A0x25c0e964919d3c1f!2sDRMD!5e0!3m2!1sen!2sph!4v1684227844834!5m2!1sen!2sph",
 }
 
+// Source: https://www.drmd.sc/ - Seychelles-specific hazards
 export const disasterAlerts = [
   {
     id: 1,
-    title: "Tropical Cyclone Warning",
+    title: "Heavy Rainfall Advisory",
     severity: "warning",
-    date: "May 16, 2023",
-    description: "A tropical cyclone is expected to make landfall in the next 24 hours.",
-    regions: ["Metro Manila", "Central Luzon", "Southern Luzon"],
-    actions: "Evacuate low-lying areas, secure homes, and monitor updates.",
+    date: "November 2025",
+    description: "Heavy rainfall expected across Mahé. Residents in flood-prone areas should remain vigilant.",
+    regions: ["Bel Ombre", "Beau Vallon", "Glacis", "St. Louis"],
+    actions: "Monitor weather updates, avoid low-lying areas, and prepare emergency supplies.",
   },
   {
     id: 2,
-    title: "Earthquake Advisory",
+    title: "Monsoon Season Preparedness",
     severity: "info",
-    date: "May 15, 2023",
-    description: "A minor earthquake was felt in several parts of the country. No damage reported.",
-    regions: ["Metro Manila", "CALABARZON"],
-    actions: "Stay calm, check for injuries, and inspect buildings for damage.",
+    date: "November 2025",
+    description: "The northwest monsoon season is approaching. Increased rainfall and occasional storms expected.",
+    regions: ["All Mahé Districts", "Praslin", "La Digue"],
+    actions: "Secure outdoor items, clear drainage channels, and review family emergency plans.",
   },
   {
     id: 3,
-    title: "Volcanic Eruption Alert",
-    severity: "danger",
-    date: "May 14, 2023",
-    description: "Mount Mayon is exhibiting increased volcanic activity. Eruption is imminent.",
-    regions: ["Bicol Region"],
-    actions: "Evacuate within the 8-kilometer radius, wear masks, and follow authorities' instructions.",
+    title: "Coastal Erosion Monitoring",
+    severity: "info",
+    date: "October 2025",
+    description: "Ongoing monitoring of coastal erosion in affected areas. Beach access may be restricted.",
+    regions: ["Beau Vallon", "Anse Royale", "Grand'Anse Praslin"],
+    actions: "Observe warning signs, avoid unstable coastal areas, and report erosion to authorities.",
   },
 ]
 
@@ -540,24 +565,31 @@ export const statistics = [
   },
 ]
 
+// Seychelles DRMD partners and international organizations
 export const partners = [
   {
     id: 1,
-    name: "Philippine Red Cross",
+    name: "Seychelles Red Cross Society",
     logo: "/placeholder.svg?height=50&width=100",
-    url: "https://redcross.org.ph",
+    url: "https://www.redcross.sc",
   },
   {
     id: 2,
-    name: "World Vision",
+    name: "United Nations Office for Disaster Risk Reduction (UNDRR)",
     logo: "/placeholder.svg?height=50&width=100",
-    url: "https://www.worldvision.org",
+    url: "https://www.undrr.org",
   },
   {
     id: 3,
-    name: "UNICEF",
+    name: "Indian Ocean Commission (IOC)",
     logo: "/placeholder.svg?height=50&width=100",
-    url: "https://www.unicef.org",
+    url: "https://www.commissionoceanindien.org",
+  },
+  {
+    id: 4,
+    name: "UNESCO IOC Tsunami Programme",
+    logo: "/placeholder.svg?height=50&width=100",
+    url: "https://www.ioc-tsunami.org",
   },
 ]
 

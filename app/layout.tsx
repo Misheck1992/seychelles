@@ -88,6 +88,10 @@ export default function RootLayout({
         />
         <link
           rel="stylesheet"
+          href="/css/navigation-loader.css"
+        />
+        <link
+          rel="stylesheet"
           href="/css/weather.css"
         />
       </head>

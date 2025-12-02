@@ -22,7 +22,16 @@ export function FeaturedDocuments() {
       <div className="container">
         <div className="flex justify-between items-center mb-8">
           <h2 className="text-2xl font-bold">Featured Documents</h2>
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-3">
+            {/* DRMD Logo */}
+            <div className="flex items-center">
+              <img
+                src="/ddrc.png"
+                alt="DRMD Logo"
+                className="h-10 w-auto object-contain"
+              />
+            </div>
+
             <Button size="icon" variant="outline" className="h-8 w-8 bg-primary text-white rounded-full">
               <ChevronLeft className="h-4 w-4" />
               <span className="sr-only">Previous</span>
@@ -36,6 +45,15 @@ export function FeaturedDocuments() {
               <ChevronRight className="h-4 w-4" />
               <span className="sr-only">Next</span>
             </Button>
+
+            {/* Seychelles Logo */}
+            <div className="flex items-center">
+              <img
+                src="/img/logosey.png"
+                alt="Seychelles Logo"
+                className="h-10 w-auto object-contain"
+              />
+            </div>
           </div>
         </div>
 

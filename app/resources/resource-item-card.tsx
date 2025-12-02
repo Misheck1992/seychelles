@@ -2,7 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 
 type ResourceItemProps = {
-  id: number;
+  id: number | string;
   title: string;
   description: string;
   thumbnail: string;
@@ -12,6 +12,10 @@ type ResourceItemProps = {
   date: string;
   category: string;
   tags: string[];
+  source?: string;
+  country?: string;
+  fileUrl?: string;
+  previewUrl?: string;
 };
 
 const ResourceItemCard: React.FC<{ item: ResourceItemProps }> = ({ item }) => {

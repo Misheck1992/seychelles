@@ -25,18 +25,35 @@ const DocumentFilterBar: React.FC<DocumentFilterBarProps> = ({
     'DISTRICT'
   ];
 
+  // Seychelles districts - sorted alphabetically
   const districts = [
     'All Districts',
-    'Plaines Wilhems',
-    'Port Louis',
-    'Flacq',
-    'Rivière du Rempart',
-    'Grand Port',
-    'Savanne',
-    'Black River',
-    'Tamarin',
-    'Moka',
-    'Curepipe'
+    'Anse aux Pins',
+    'Anse Boileau',
+    'Anse Etoile',
+    'Anse Royale',
+    'Au Cap',
+    'Baie Lazare',
+    'Baie Sainte Anne',
+    'Beau Vallon',
+    'Bel Air',
+    'Bel Ombre',
+    'Cascade',
+    'English River',
+    'Glacis',
+    'Grand Anse Mahé',
+    'Grand Anse Praslin',
+    'La Digue',
+    'Les Mamelles',
+    'Mont Buxton',
+    'Mont Fleuri',
+    'Outer Islands',
+    'Plaisance',
+    'Pointe Larue',
+    'Port Glaud',
+    'Roche Caïman',
+    'Saint Louis',
+    'Takamaka'
   ];
 
   const handleFilter = (e: React.FormEvent) => {

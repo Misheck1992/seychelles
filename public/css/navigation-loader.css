@@ -1,0 +1,100 @@
+/* Navigation Loading Indicator Styles */
+
+.navigation-loader-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.95);
+  z-index: 10000; /* Higher than header and other elements */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 0.2s ease-in-out;
+  backdrop-filter: blur(2px);
+}
+
+.navigation-loader-content {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.navigation-spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navigation-spinner .spinner-border {
+  width: 3rem;
+  height: 3rem;
+  border-width: 0.3rem;
+}
+
+.navigation-loader-text {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #338F7A;
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+/* Prevent clicks on navigation items while loading */
+.navigation-loading .nav-link,
+.navigation-loading .navbar-brand,
+.navigation-loading a[href] {
+  pointer-events: none;
+  opacity: 0.7;
+}
+
+/* Fade in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Pulse animation for loading text */
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.6;
+  }
+}
+
+/* Dark theme support */
+[data-bs-theme="dark"] .navigation-loader-overlay {
+  background-color: rgba(0, 0, 0, 0.95);
+}
+
+[data-bs-theme="dark"] .navigation-loader-text {
+  color: #4CAF93;
+}
+
+/* Mobile responsiveness */
+@media only screen and (max-width: 767px) {
+  .navigation-spinner .spinner-border {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-width: 0.25rem;
+  }
+  
+  .navigation-loader-text {
+    font-size: 1rem;
+  }
+}
+
+/* Ensure the loader is above everything */
+.navigation-loader-overlay {
+  isolation: isolate;
+}
+

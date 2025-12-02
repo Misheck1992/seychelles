@@ -45,12 +45,12 @@ const DistrictDetails: React.FC = () => {
 
   // State for currently selected district
   const [selectedDistrict, setSelectedDistrict] = useState<DistrictKey>(
-    // If districtId exists and is valid, use it; otherwise fallback to 'victoria'
+    // If districtId exists and is valid, use it; otherwise fallback to 'bel-air' (first Greater Victoria district)
     districtId && districtData[districtId as DistrictKey]
       ? districtId as DistrictKey
-      : 'victoria'
+      : 'bel-air'
   );
-  const [currentDistrictData, setCurrentDistrictData] = useState<DistrictDataType>(districtData['victoria']);
+  const [currentDistrictData, setCurrentDistrictData] = useState<DistrictDataType>(districtData['bel-air']);
 
   // State for map
   const [mapCenter, setMapCenter] = useState<[number, number]>([-4.6167, 55.4500]); // Center of Seychelles (Victoria)
@@ -89,7 +89,7 @@ const DistrictDetails: React.FC = () => {
         setMapZoom(11);
       } else if (districtId && !districtData[districtId as DistrictKey]) {
         // Redirect to default district if invalid district ID is provided
-        router.push('/districts/victoria');
+        router.push('/districts/bel-air');
         return; // Exit early as we're redirecting
       }
 
@@ -242,11 +242,11 @@ const DistrictDetails: React.FC = () => {
             <div className="row">
               <div className="col-lg-12">
                 <div className="breadcrumb-title text-center">
-                  <h2>{currentDistrictData.title}</h2>
+                  <h2>{currentDistrictData?.title || 'District Details'}</h2>
                   <ul className="breadcrumb-menu list-style">
                     <li><a href="/">Home</a></li>
                     <li><a href="/districts">Districts</a></li>
-                    <li>{currentDistrictData.name}</li>
+                    <li>{currentDistrictData?.name || 'Loading...'}</li>
                   </ul>
                 </div>
               </div>
@@ -291,8 +291,10 @@ const DistrictDetails: React.FC = () => {
                             All Districts
                           </label>
                         </div>
-                        {/* Dynamically generate radio buttons for all districts */}
-                        {Object.entries(districtData).map(([key, district]) => (
+                        {/* Dynamically generate radio buttons for all districts - sorted alphabetically */}
+                        {Object.entries(districtData)
+                          .sort(([, a], [, b]) => a.name.localeCompare(b.name))
+                          .map(([key, district]) => (
                           <div className="form-check mb-2" key={key}>
                             <input
                               type="radio"
@@ -460,29 +462,20 @@ const DistrictDetails: React.FC = () => {
                               disabled={isDataLoading}
                             >
                               <option value="" disabled>Change a District</option>
-                              <option value="victoria">Victoria</option>
-                              <option value="beau-vallon">Beau Vallon</option>
-                              <option value="anse-aux-pins">Anse aux Pins</option>
-                              <option value="anse-boileau">Anse Boileau</option>
-                              <option value="anse-etoile">Anse Etoile</option>
-                              <option value="anse-royale">Anse Royale</option>
-                              <option value="baie-lazare">Baie Lazare</option>
-                              <option value="cascade">Cascade</option>
-                              <option value="glacis">Glacis</option>
-                              <option value="grand-anse-mahe">Grand Anse Mahé</option>
-                              <option value="mont-fleuri">Mont Fleuri</option>
-                              <option value="plaisance">Plaisance</option>
-                              <option value="port-glaud">Port Glaud</option>
-                              <option value="takamaka">Takamaka</option>
-                              <option value="praslin">Praslin</option>
-                              <option value="la-digue">La Digue</option>
-                              <option value="outer-islands">Outer Islands</option>
+                              {Object.entries(districtData)
+                                .sort(([, a], [, b]) => a.name.localeCompare(b.name))
+                                .map(([key, district]) => (
+                                  <option key={key} value={key}>
+                                    {district.name}
+                                  </option>
+                                ))}
                             </select>
                           </div>
                         </div>
                       </div>
-                      <h2>{currentDistrictData.name} Overview</h2>
+                      <h2>{currentDistrictData?.name || 'District'} Overview</h2>
                     </div>
+                    {currentDistrictData && (
                     <div className="about-content fade-in">
                       <p>{currentDistrictData.description}</p>
                       <div className="row mt-4">
@@ -502,11 +495,13 @@ const DistrictDetails: React.FC = () => {
                         </div>
                       </div>
                     </div>
+                    )}
                   </div>
                   <div className="col-lg-4">
                     <div className="card h-100 bg-white p-3 shadow-sm">
-                      <h5 className="card-title p-2 border-bottom">{currentDistrictData.name}</h5>
+                      <h5 className="card-title p-2 border-bottom">{currentDistrictData?.name || 'District'}</h5>
                       <div className="district-map">
+                        {currentDistrictData && (
                         <LeafletMap
                           districts={districtData}
                           selectedDistrict={selectedDistrict}
@@ -514,12 +509,14 @@ const DistrictDetails: React.FC = () => {
                           center={mapCenter}
                           zoom={mapZoom}
                         />
+                        )}
                       </div>
                     </div>
                   </div>
                 </div>
 
                 {/* District Risk Analysis Card */}
+                {currentDistrictData && (
                 <div className="card mb-4 bg-white p-4 shadow-sm fade-in">
                   <h5 className="card-title border-bottom pb-2 mb-4">Risk Analysis</h5>
                   <div className="row">
@@ -575,6 +572,7 @@ const DistrictDetails: React.FC = () => {
                     <p className="text-muted mb-0"><small>Risk assessment based on historical data, topographical analysis, and infrastructure evaluation. Last updated: April 2025</small></p>
                   </div>
                 </div>
+                )}
 
                 {/* District Activity Tabs */}
                 <DistrictActivityTabs districtId={selectedDistrict} />

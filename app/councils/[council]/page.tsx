@@ -91,7 +91,8 @@ const CouncilDetails: React.FC = () => {
       clearTimeout(timer);
       stopLoading();
     };
-  }, [councilId, councilState.selectedCouncil, router, startLoading, stopLoading]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [councilId, councilState.selectedCouncil, router]);
 
   // Initialize modals on component mount
   useEffect(() => {
@@ -188,7 +189,7 @@ const CouncilDetails: React.FC = () => {
                   <h2>{councilState.councilData.title}</h2>
                   <ul className="breadcrumb-menu list-style">
                     <li><a href="/">Home</a></li>
-                    <li><a href="/councils">Councils</a></li>
+                    <li><a href="/councils">Ministries</a></li>
                     <li>{councilState.councilData.name}</li>
                   </ul>
                 </div>
@@ -204,13 +205,13 @@ const CouncilDetails: React.FC = () => {
             {/* Left Side: Filters */}
             <div className="col-lg-3 col-md-4">
               <div className="council-filter-sidebar p-3 rounded shadow-sm" style={{ top: '90px', backgroundColor: 'white' }}>
-                <h5 className="border-bottom pb-2 mb-3">Filter Council Data</h5>
+                <h5 className="border-bottom pb-2 mb-3">Filter Ministry/Division Data</h5>
 
-                {/* Councils Filter */}
+                {/* Ministries Filter */}
                 <div className="filter-section mb-3">
                   <div className="filter-header" data-bs-toggle="collapse" data-bs-target="#councilFilters" aria-expanded="true">
                     <h6 className="d-flex justify-content-between align-items-center mb-0">
-                      Councils
+                      Ministries
                       <i className="ri-arrow-down-s-line"></i>
                     </h6>
                   </div>
@@ -228,16 +229,16 @@ const CouncilDetails: React.FC = () => {
                               setFilters(prev => ({ ...prev, council: 'all' }));
                               // Set the navigation flag to prevent the useEffect from resetting
                               isNavigating.current = true;
-                              // Navigate to the default council when "All Councils" is selected
+                              // Navigate to the default council when "All Ministries" is selected
                               router.push('/councils/agriculture', { scroll: false });
                             }
                           }}
                         />
                         <label className="form-check-label" htmlFor="council-all">
-                          All Councils
+                          All Ministries
                         </label>
                       </div>
-                      {/* Dynamically generate radio buttons for all councils */}
+                      {/* Dynamically generate radio buttons for all Ministries */}
                       {Object.entries(councilData).map(([key, council]) => (
                         <div className="form-check mb-2" key={key}>
                           <input
@@ -480,13 +481,13 @@ const CouncilDetails: React.FC = () => {
 
             {/* Right Side: Content */}
             <div className="col-lg-9 col-md-8">
-                  {/* Council Overview */}
+                  {/* Ministry/Division Overview */}
                   <div className="row mb-5">
                     <div className="col-lg-8">
                       <div className="section-title style3 mb-30">
                         <div className="row align-items-center">
                           <div className="col-lg-7 col-md-6">
-                            <span>Department Profile</span>
+                            <span>Ministry/Division Profile</span>
                           </div>
                           <div className="col-lg-5 col-md-6">
                             <div className="council-dropdown-wrapper text-md-end mb-30">
@@ -497,7 +498,7 @@ const CouncilDetails: React.FC = () => {
                                 onChange={handleCouncilChange}
                                 disabled={isLoading}
                               >
-                                <option value="" disabled>Change Council</option>
+                                <option value="" disabled>Change Ministry/Division</option>
                                 <option value="agriculture">Agriculture</option>
                                 <option value="civil-service">Civil Service</option>
                                 <option value="education">Education</option>
@@ -531,7 +532,7 @@ const CouncilDetails: React.FC = () => {
                     </div>
                     <div className="col-lg-4">
                       <div className="card h-100 bg-white p-3 shadow-sm">
-                        <h5 className="card-title p-2 border-bottom">Department leadership</h5>
+                        <h5 className="card-title p-2 border-bottom">Ministry/Division Leadership</h5>
                         <div className="text-center mb-3">
                           <img
                             src={councilState.councilData.leadership.image}
@@ -551,7 +552,7 @@ const CouncilDetails: React.FC = () => {
                     </div>
                   </div>
 
-              {/* Council Activity Tabs */}
+              {/* Ministry/Division Activity Tabs */}
               <CouncilActivityTabs
                 councilId={councilState.selectedCouncil}
                 yearFilters={filters.years}

@@ -2,6 +2,7 @@
 
 import React, { createContext, useContext, useState, ReactNode, useEffect, Suspense } from 'react';
 import PageLoader from '@/components/PageLoader';
+import NavigationLoader from '@/components/NavigationLoader';
 import { usePathname, useSearchParams } from 'next/navigation';
 
 interface LoadingContextType {
@@ -57,7 +58,7 @@ const LoadingProviderWithSearchParams: React.FC<LoadingProviderProps> = ({ child
     []
   );
 
-  const setLoading = (loading: boolean) => {
+  const setLoading = React.useCallback((loading: boolean) => {
     // Clear any existing timeout
     if (loadingTimeoutRef.current) {
       clearTimeout(loadingTimeoutRef.current);
@@ -80,7 +81,7 @@ const LoadingProviderWithSearchParams: React.FC<LoadingProviderProps> = ({ child
           setLoadingCount(0);
           debouncedSetIsLoading(false);
         }
-      }, 2000); // Reduced from 3000ms to 2000ms for faster response
+      }, 3000); // Maximum time to show loader before auto-hiding
     } else {
       // Only turn off loading if we're not in a rapid toggle situation
       if (timeSinceLastLoading > 500 || !isLoading) {
@@ -95,15 +96,15 @@ const LoadingProviderWithSearchParams: React.FC<LoadingProviderProps> = ({ child
         }, 200); // Reduced from 300ms to 200ms
       }
     }
-  };
+  }, [debouncedSetIsLoading, isLoading]);
 
-  const startLoading = () => {
+  const startLoading = React.useCallback(() => {
     setLoading(true);
-  };
+  }, [setLoading]);
 
-  const stopLoading = () => {
+  const stopLoading = React.useCallback(() => {
     setLoading(false);
-  };
+  }, [setLoading]);
 
   // Set mounted flag and clean up on unmount
   React.useEffect(() => {
@@ -116,7 +117,7 @@ const LoadingProviderWithSearchParams: React.FC<LoadingProviderProps> = ({ child
         setLoadingCount(0);
         debouncedSetIsLoading(false);
       }
-    }, 3000);
+    }, 5000); // Increased to 5 seconds to allow slower pages to load
 
     return () => {
       isMountedRef.current = false;
@@ -138,21 +139,21 @@ const LoadingProviderWithSearchParams: React.FC<LoadingProviderProps> = ({ child
 
   // Reset loading state on route change
   useEffect(() => {
-    // Short delay to allow any new page to start its loading if needed
+    // Longer delay to allow page content to fully render
     const routeChangeTimeout = setTimeout(() => {
       if (isLoading) {
         console.log('Route changed - resetting loading state');
         setLoadingCount(0);
         debouncedSetIsLoading(false);
       }
-    }, 500);
+    }, 1000); // Increased from 500ms to 1000ms to ensure content is rendered
 
     return () => clearTimeout(routeChangeTimeout);
   }, [pathname, searchParams, isLoading, debouncedSetIsLoading]);
 
   return (
     <LoadingContext.Provider value={{ isLoading, setLoading, startLoading, stopLoading }}>
-      {/* Loaders removed as requested */}
+      <NavigationLoader isVisible={isLoading} />
       {children}
     </LoadingContext.Provider>
   );

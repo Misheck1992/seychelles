@@ -419,14 +419,11 @@ const Footer: React.FC = () => {
     <>
       <footer className="footer-wrap">
         <div className="footer-top">
-          <img src="/img/footer-shape-2.png" alt="Footer Shape" className="footer-shape-one moveHorizontal" />
-          <img src="/img/sun-2.png" alt="Sun Shape" className="footer-shape-two rotate" />
           <div className="container">
             <div className="row pt-100 pb-75">
               <div className="col-xl-4 col-lg-4 col-md-6 col-sm-6 pe-xl-5">
                 <div className="footer-widget">
                   <Link href="/" className="footer-logo">
-                    <img src="/img/molog.png" alt="National Disaster Management Center" />
                   </Link>
                   <p className="comp-desc">
                     The National Disaster Management Center works to strengthen disaster resilience through coordinated prevention, preparedness, response, and recovery initiatives across all levels of government.

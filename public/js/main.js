@@ -1,9 +1,15 @@
 (function ($) {
     "use strict";
 
+    // Check if jQuery and required plugins are loaded
+    if (typeof $ === 'undefined') {
+        console.error('jQuery is not loaded!');
+        return;
+    }
+
     // Buy Now Btn
-    // $('body').append("<a href='#' class='buy-now-btn' target='_blank'><img src='/img/envato.png' alt='envato'/>Buy Now</a>"); 
-    
+    // $('body').append("<a href='#' class='buy-now-btn' target='_blank'><img src='/img/envato.png' alt='envato'/>Buy Now</a>");
+
     // Preloader
     $(window).on('load', function (event) {
         $('.js-preloader').delay(500).fadeOut(500);
@@ -87,69 +93,81 @@
         });
     });
     
-    // Hero  Slider 
-    $(".hero-slider-one").owlCarousel({
-        nav: true,
-        dots: false,
-        loop: true,
-        margin: 20,
-        items: 1,
-        animateOut: 'fadeOut',
-        thumbs: true,
-        thumbsPrerendered: true, 
-        navText: ['<i class="flaticon-left-arrow"></i>', '<i class="flaticon-right-arrow"></i>'],
-        smartSpeed: 1300,
-        autoplay: false,
-        autoplayTimeout: 4000,
-        autoplayHoverPause: false,
-        responsiveClass: true,
-        autoHeight: true,
-    });
+    // Check if Owl Carousel is loaded before initializing
+    if (typeof $.fn.owlCarousel === 'undefined') {
+        console.warn('Owl Carousel is not loaded yet. Skipping carousel initialization.');
+        return;
+    }
+
+    // Hero  Slider
+    if ($(".hero-slider-one").length) {
+        $(".hero-slider-one").owlCarousel({
+            nav: true,
+            dots: false,
+            loop: true,
+            margin: 20,
+            items: 1,
+            animateOut: 'fadeOut',
+            thumbs: true,
+            thumbsPrerendered: true,
+            navText: ['<i class="flaticon-left-arrow"></i>', '<i class="flaticon-right-arrow"></i>'],
+            smartSpeed: 1300,
+            autoplay: false,
+            autoplayTimeout: 4000,
+            autoplayHoverPause: false,
+            responsiveClass: true,
+            autoHeight: true,
+        });
+    }
 
     // New Banner Slider JS
-    $(".banner-slide").owlCarousel({
-        nav: true,
-        dots: false,
-        loop: true,
-        items: 1,
-        thumbs: true,
-        margin: 0,
-        navText: ['<i class="flaticon-left-arrow"></i>', '<i class="flaticon-right-arrow"></i>'],
-        smartSpeed: 1300,
-        autoplay: false,
-        autoplayTimeout: 4000,
-        autoplayHoverPause: false,
-        responsiveClass: true,
-        autoHeight: true,
-    });
+    if ($(".banner-slide").length) {
+        $(".banner-slide").owlCarousel({
+            nav: true,
+            dots: false,
+            loop: true,
+            items: 1,
+            thumbs: true,
+            margin: 0,
+            navText: ['<i class="flaticon-left-arrow"></i>', '<i class="flaticon-right-arrow"></i>'],
+            smartSpeed: 1300,
+            autoplay: false,
+            autoplayTimeout: 4000,
+            autoplayHoverPause: false,
+            responsiveClass: true,
+            autoHeight: true,
+        });
+    }
 
-    // Testimonial Slider 
-    $(".testimonial-slider-one").owlCarousel({
-        nav: true,
-        dots: false,
-        loop: true,
-        navText: ['<i class="flaticon-left-arrow"></i>', '<i class="flaticon-right-arrow"></i>'],
-        margin: 25,
-        items: 1,
-        thumbs: false,
-        smartSpeed: 1300,
-        autoplay: false,
-        autoplayTimeout: 4000,
-        autoplayHoverPause: false,
-        responsiveClass: true,
-        autoHeight: true,
-        responsive: {
-            0: {
-                items: 1,
-            },
-            768: {
-                items: 2,
-            },
-            1200: {
-                items: 3,
+    // Testimonial Slider
+    if ($(".testimonial-slider-one").length) {
+        $(".testimonial-slider-one").owlCarousel({
+            nav: true,
+            dots: false,
+            loop: true,
+            navText: ['<i class="flaticon-left-arrow"></i>', '<i class="flaticon-right-arrow"></i>'],
+            margin: 25,
+            items: 1,
+            thumbs: false,
+            smartSpeed: 1300,
+            autoplay: false,
+            autoplayTimeout: 4000,
+            autoplayHoverPause: false,
+            responsiveClass: true,
+            autoHeight: true,
+            responsive: {
+                0: {
+                    items: 1,
+                },
+                768: {
+                    items: 2,
+                },
+                1200: {
+                    items: 3,
+                }
             }
-        }
-    });
+        });
+    }
 
     // Project Slider 
     $(".project-slider-one").owlCarousel({

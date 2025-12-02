@@ -48,9 +48,9 @@ const EmergencyModal: React.FC<EmergencyAlertModalProps> = ({ show = false, onCl
             <h5>Cyclone Warning in Effect</h5>
             <p>A cyclone warning is currently in effect for the following areas:</p>
             <ul>
-              <li>Eastern Coastal Regions</li>
-              <li>Southern Districts</li>
-              <li>Port Louis</li>
+              <li>Eastern Coastal Regions (Anse aux Pins, Au Cap, Cascade)</li>
+              <li>Southern Districts (Anse Royale, Baie Lazare, Takamaka)</li>
+              <li>Greater Victoria Districts</li>
             </ul>
             <p className="alert alert-warning">
               Residents in affected areas should follow evacuation instructions if issued by local authorities.

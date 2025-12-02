@@ -3,13 +3,13 @@
 import React, { useEffect, useRef } from 'react';
 import * as d3 from 'd3';
 import CounterCard from './CounterCard';
+import SeychellesRiskMapWrapper from './SeychellesRiskMapWrapper';
 
 interface StatisticsSectionProps {
   // Add any props if needed
 }
 
 const StatisticsSection: React.FC<StatisticsSectionProps> = () => {
-  const mapRef = useRef<HTMLDivElement>(null);
   const cycloneChartRef = useRef<HTMLDivElement>(null);
   const floodChartRef = useRef<HTMLDivElement>(null);
   const radarChartRef = useRef<HTMLDivElement>(null);
@@ -18,31 +18,30 @@ const StatisticsSection: React.FC<StatisticsSectionProps> = () => {
     // Only run on client-side
     if (typeof window === 'undefined') return;
 
-    // Clear previous charts before creating new ones
-    if (mapRef.current) mapRef.current.innerHTML = '';
-    if (cycloneChartRef.current) cycloneChartRef.current.innerHTML = '';
-    if (floodChartRef.current) floodChartRef.current.innerHTML = '';
-    if (radarChartRef.current) radarChartRef.current.innerHTML = '';
+    // Add a small delay to ensure the container has proper dimensions
+    const timer = setTimeout(() => {
+      // Clear previous charts before creating new ones
+      if (cycloneChartRef.current) cycloneChartRef.current.innerHTML = '';
+      if (floodChartRef.current) floodChartRef.current.innerHTML = '';
+      if (radarChartRef.current) radarChartRef.current.innerHTML = '';
 
-    if (mapRef.current && cycloneChartRef.current && floodChartRef.current && radarChartRef.current) {
-      createSeychellesMap();
-      createCycloneChart();
-      createFloodChart();
-      createRadarChart();
-    }
+      if (cycloneChartRef.current && floodChartRef.current && radarChartRef.current) {
+        createCycloneChart();
+        createFloodChart();
+        createRadarChart();
+      }
+    }, 100);
 
     const handleResize = () => {
       // Only run on client-side
       if (typeof window === 'undefined') return;
 
       // Clear previous charts before creating new ones
-      if (mapRef.current) mapRef.current.innerHTML = '';
       if (cycloneChartRef.current) cycloneChartRef.current.innerHTML = '';
       if (floodChartRef.current) floodChartRef.current.innerHTML = '';
       if (radarChartRef.current) radarChartRef.current.innerHTML = '';
 
-      if (mapRef.current && cycloneChartRef.current && floodChartRef.current && radarChartRef.current) {
-        createSeychellesMap();
+      if (cycloneChartRef.current && floodChartRef.current && radarChartRef.current) {
         createCycloneChart();
         createFloodChart();
         createRadarChart();
@@ -50,91 +49,12 @@ const StatisticsSection: React.FC<StatisticsSectionProps> = () => {
     };
 
     window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
+    return () => {
+      clearTimeout(timer);
+      window.removeEventListener('resize', handleResize);
+    };
   }, []);
 
-  const createSeychellesMap = () => {
-    if (!mapRef.current) return;
-
-    // D3.js map creation code
-    const width = mapRef.current.clientWidth;
-    const height = 450;
-
-    const svg = d3.select(mapRef.current)
-      .append("svg")
-      .attr("width", width)
-      .attr("height", height);
-
-    // Simple placeholder map with risk zones
-    svg.append("rect")
-      .attr("width", width)
-      .attr("height", height)
-      .attr("fill", "#e8f5e9");
-
-    // Draw Seychelles island shape (simplified)
-    const islandPath = "M" + (width/2) + "," + (height/4) +
-                      " c50,10 100,50 120,100" +
-                      " s-20,100 -70,120" +
-                      " s-100,0 -150,-30" +
-                      " s-50,-100 -20,-150" +
-                      " s70,-50 120,-40z";
-
-    svg.append("path")
-      .attr("d", islandPath)
-      .attr("fill", "#81c784")
-      .attr("stroke", "#2e7d32")
-      .attr("stroke-width", 2);
-
-    // Add risk zones
-    const riskZones = [
-      { x: width/2 - 40, y: height/4 + 50, r: 30, risk: "high" },
-      { x: width/2 + 60, y: height/4 + 80, r: 25, risk: "medium" },
-      { x: width/2 - 20, y: height/4 + 120, r: 35, risk: "high" },
-      { x: width/2 + 30, y: height/4 + 150, r: 20, risk: "low" }
-    ];
-
-    const riskColors: {[key: string]: string} = {
-      high: "rgba(244, 67, 54, 0.7)",
-      medium: "rgba(255, 152, 0, 0.7)",
-      low: "rgba(255, 235, 59, 0.7)"
-    };
-
-    riskZones.forEach(zone => {
-      svg.append("circle")
-        .attr("cx", zone.x)
-        .attr("cy", zone.y)
-        .attr("r", zone.r)
-        .attr("fill", riskColors[zone.risk])
-        .attr("stroke", "#fff")
-        .attr("stroke-width", 1)
-        .attr("opacity", 0.7);
-    });
-
-    // Add legend
-    const legend = svg.append("g")
-      .attr("transform", `translate(${width - 120}, 20)`);
-
-    const legendItems = [
-      { risk: "high", label: "High Risk" },
-      { risk: "medium", label: "Medium Risk" },
-      { risk: "low", label: "Low Risk" }
-    ];
-
-    legendItems.forEach((item, i) => {
-      legend.append("rect")
-        .attr("x", 0)
-        .attr("y", i * 25)
-        .attr("width", 15)
-        .attr("height", 15)
-        .attr("fill", riskColors[item.risk]);
-
-      legend.append("text")
-        .attr("x", 25)
-        .attr("y", i * 25 + 12)
-        .text(item.label)
-        .attr("font-size", "12px");
-    });
-  };
 
   const createCycloneChart = () => {
     if (!cycloneChartRef.current) return;
@@ -411,11 +331,11 @@ const StatisticsSection: React.FC<StatisticsSectionProps> = () => {
           <p className="text-white">Current statistics on emergency preparedness resources...</p>
         </div>
 
-        <div className="row mb-5">
+        <div className="row mb-4">
           <div className="col-lg-12">
-            <div className="card bg-white p-4 rounded shadow-sm">
-              <h4 className="text-center mb-4">Seychelles Disaster Risk Map</h4>
-              <div id="seychelles-map" ref={mapRef} className="map-container position-relative"></div>
+            <div className="card bg-white p-2 rounded shadow-sm">
+              <h4 className="text-center mb-2 mt-2">Seychelles Disaster Risk Map</h4>
+              <SeychellesRiskMapWrapper />
             </div>
           </div>
         </div>

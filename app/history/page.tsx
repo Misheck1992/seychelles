@@ -98,8 +98,8 @@ export default function HistoryPage() {
               <div className="col-lg-6 order-lg-1 order-2">
                 <div className="card border-0 shadow-sm h-100">
                   <div className="card-body p-4">
-                    <h3 className="h4 mb-3">Department of Risk and Disaster Management</h3>
-                    <p>The Department of Risk and Disaster Management was established under the Vice President&apos;s Office.</p>
+                    <h3 className="h4 mb-3">Division of Risk and Disaster Management</h3>
+                    <p>The Division of Risk and Disaster Management was established under the Vice President&apos;s Office.</p>
                     <p>This marked a significant step in formalizing disaster risk management within the government structure.</p>
                   </div>
                 </div>
@@ -111,7 +111,7 @@ export default function HistoryPage() {
                 <div className="timeline-image ms-4">
                   <Image
                     src="/placeholder.svg"
-                    alt="Department of Risk and Disaster Management"
+                    alt="Division of Risk and Disaster Management"
                     width={400}
                     height={250}
                     className="img-fluid rounded shadow"

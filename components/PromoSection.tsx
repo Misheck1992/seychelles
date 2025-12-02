@@ -24,9 +24,6 @@ const PromoSection: React.FC = () => {
     <section className="promo-section">
       <div className="container">
         <div className="promo-wrap style2" style={{ position: 'relative', zIndex: 5, marginTop: '-150px' }}>
-        
-         
-
           <div className="promo-card">
             <span className="promo-icon">
               <i className="flaticon-verified" />

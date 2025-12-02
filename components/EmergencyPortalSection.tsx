@@ -3,25 +3,48 @@ import React, { useState } from 'react';
 
 const EmergencyPortalSection: React.FC = () => {
   const [selectedDistrict, setSelectedDistrict] = useState<string>('');
+  // Seychelles 26 administrative districts (source: Wikipedia)
   const districts = [
-    { value: "PLAINES_WILHEMS", label: "Plaines Wilhems" },
-    { value: "PORT_LOUIS", label: "Port Louis" },
-    { value: "FLACQ", label: "Flacq" },
-    { value: "RIVIERE_DU_REMPART", label: "Rivière du Rempart" },
-    { value: "GRAND_PORT", label: "Grand Port" },
-    { value: "SAVANNE", label: "Savanne" },
-    { value: "BLACK_RIVER", label: "Black River" },
-    { value: "TAMARIN", label: "Tamarin" },
-    { value: "MOKA", label: "Moka" },
-    { value: "CUREPIPE", label: "Curepipe" }
+    // Greater Victoria districts
+    { value: "bel-air", label: "Bel Air" },
+    { value: "english-river", label: "English River" },
+    { value: "les-mamelles", label: "Les Mamelles" },
+    { value: "mont-buxton", label: "Mont Buxton" },
+    { value: "mont-fleuri", label: "Mont Fleuri" },
+    { value: "plaisance", label: "Plaisance" },
+    { value: "roche-caiman", label: "Roche Caïman" },
+    { value: "saint-louis", label: "Saint Louis" },
+    // North Mahé districts
+    { value: "anse-etoile", label: "Anse Etoile" },
+    { value: "beau-vallon", label: "Beau Vallon" },
+    { value: "glacis", label: "Glacis" },
+    // East Mahé districts
+    { value: "anse-aux-pins", label: "Anse aux Pins" },
+    { value: "au-cap", label: "Au Cap" },
+    { value: "cascade", label: "Cascade" },
+    { value: "pointe-larue", label: "Pointe La Rue" },
+    // South Mahé districts
+    { value: "anse-royale", label: "Anse Royale" },
+    { value: "baie-lazare", label: "Baie Lazare" },
+    { value: "takamaka", label: "Takamaka" },
+    // West Mahé districts
+    { value: "anse-boileau", label: "Anse Boileau" },
+    { value: "bel-ombre", label: "Bel Ombre" },
+    { value: "grand-anse-mahe", label: "Grand'Anse Mahé" },
+    { value: "port-glaud", label: "Port Glaud" },
+    // Praslin districts
+    { value: "baie-sainte-anne", label: "Baie Sainte Anne" },
+    { value: "grand-anse-praslin", label: "Grand'Anse Praslin" },
+    // Other islands
+    { value: "la-digue", label: "La Digue and Inner Islands" },
+    { value: "outer-islands", label: "Outer Islands" }
   ];
 
   return (
     <div className="container mt-100">
       <div className="donate-box ptb-100" style={{ backgroundColor: "#f5f5f5" }}>
-        <img src="/img/shape-6.png" alt="Shape" className="donate-shape-one" />
         <div className="content-title style2 text-center mb-40">
-          <span style={{ color: "#338f7a" }}>Disaster Preparedness<img src="/img/section-shape.png" alt="Shape" /></span>
+          <span style={{ color: "#338f7a" }}>Disaster Preparedness</span>
           <h2 style={{ color: "#338f7a" }}>Access Emergency Preparedness Resources</h2>
           <p>Select your district to view location-specific emergency plans, evacuation routes, and resource centers.</p>
         </div>

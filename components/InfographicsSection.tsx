@@ -22,7 +22,7 @@ const InfographicsSection: React.FC = () => {
           <div className="col-xl-6">
             <div className="event-card style2">
               <div className="event-img">
-                <img src="/img/12035.jpg" alt="Flood Safety Infographic" />
+                <img src="https://images.unsplash.com/photo-1547683905-f686c993aae5?w=600&h=400&fit=crop" alt="Flood Safety Infographic" />
                 <span className="event-date">Featured</span>
               </div>
               <div className="event-info">
@@ -38,7 +38,7 @@ const InfographicsSection: React.FC = () => {
           <div className="col-xl-6">
             <div className="event-card style2">
               <div className="event-img">
-                <img src="/img/22301.jpg" alt="Emergency Kit Infographic" />
+                <img src="https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=600&h=400&fit=crop" alt="Emergency Kit Infographic" />
                 <span className="event-date">Essential</span>
               </div>
               <div className="event-info">
@@ -54,7 +54,7 @@ const InfographicsSection: React.FC = () => {
           <div className="col-xl-6">
             <div className="event-card style2">
               <div className="event-img">
-                <img src="/img/7463.jpg" alt="Earthquake Response Infographic" />
+                <img src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?w=600&h=400&fit=crop" alt="Earthquake Response Infographic" />
                 <span className="event-date">Safety</span>
               </div>
               <div className="event-info">
@@ -70,7 +70,7 @@ const InfographicsSection: React.FC = () => {
           <div className="col-xl-6">
             <div className="event-card style2">
               <div className="event-img">
-                <img src="/img/22590.jpg" alt="Hurricane Tracking Infographic" />
+                <img src="https://images.unsplash.com/photo-1569336415962-a4bd9f69cd83?w=600&h=400&fit=crop" alt="Hurricane Tracking Infographic" />
                 <span className="event-date">Tracking</span>
               </div>
               <div className="event-info">

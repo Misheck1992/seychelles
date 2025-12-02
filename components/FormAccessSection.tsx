@@ -33,12 +33,12 @@ const FormAccessSection: React.FC = () => {
   ];
 
   return (
-    <section className="cta-wrap style1 bg-f ptb-100" style={{ backgroundImage: "url('/img/cta-bg-1.jpg')" }}>
+    <section className="cta-wrap style1 bg-f ptb-100">
       <div className="container">
         <div className="row">
           <div className="col-xl-8 offset-xl-2 col-lg-8 offset-lg-2">
             <div className="content-title style1 text-center mb-40">
-              <span>Secure Access <img src="/img/section-shape.png" alt="Shape" /></span>
+              <span>Secure Access</span>
               <h2>DRMD & District Official Portal</h2>
               <p>Authorized officials can access secure forms, upload documents, and manage district-specific resources.</p>
             </div>

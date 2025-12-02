@@ -43,6 +43,12 @@ a:visited {
   overflow: visible;
 }
 
+.map-container {
+  min-height: 450px;
+  width: 100%;
+  position: relative;
+}
+
 .radarArea {
   pointer-events: all;
 }

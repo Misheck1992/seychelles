@@ -61,14 +61,13 @@ export default function DocumentsPage() {
                 </div>
                 <div className="col-md-5 mb-3 mb-md-0">
                   <select className="form-select" id="ministry-filter" style={{ height: 50, borderRadius: 25, border: '1px solid rgba(51, 143, 122, 0.3)', paddingLeft: 20 }}>
-                    <option selected>All Departments</option>
-                    <option>Department of Health</option>
-                    <option>Department of Environment & Energy</option>
-                    <option>Department of Finance</option>
-                    <option>Department of Agriculture</option>
-                    <option>Department of Education</option>
-                    <option>Department of Fisheries</option>
-                    <option>Disaster Risk Management</option>
+                    <option selected>All Ministries</option>
+                    <option>Ministry of Health</option>
+                    <option>Ministry of Agriculture, Climate Change & Environment</option>
+                    <option>Ministry of Finance, National Planning & Trade</option>
+                    <option>Ministry of Education</option>
+                    <option>Ministry of Fisheries & Blue Economy</option>
+                    <option>Disaster Risk Management Division</option>
                   </select>
                 </div>
                 <div className="col-md-3">
